@@ -1,0 +1,47 @@
+/*  
+* This stylesheet file uses Zurb Foundation and contains
+* custom mixins for the application.
+*
+*/
+
+
+/* ----------------------------------------- 
+   Mixins
+--------------------------------------------
+*/
+/*
+* Rounded Corners
+*/
+@mixin rounded($vert, $horz, $radius: 10px) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+/**
+* Box Emboss
+*/
+@mixin box-emboss ($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+/**
+* Letterpress
+*/
+@mixin letterpress($opacity) {
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+/**
+* Responsive Background
+*/
+@mixin responsive-background($url) {
+	background-image:url($url);
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

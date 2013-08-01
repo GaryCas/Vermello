@@ -1,0 +1,8 @@
+vm_core_homepage:
+    pattern:  /{page}
+    defaults: { _controller: VMCoreBundle:Server:loadPage,  page: 'homepage'}
+
+# must be last
+vm_core_static:
+    pattern:  /{page}
+    defaults: { _controller: VMCoreBundle:Server:loadPage }

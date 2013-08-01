@@ -2,12 +2,97 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Vermello{% endblock %}</title>
+        
+        {% block stylesheets %}
+        	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+        	<link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/app.css') }}" />
+        {% endblock %}
+        
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+
+		
+			
+			<div class="row header">
+				<div class="small-4 columns logo">
+					<img src="{{ asset('assets/images/logo.png') }}" alt="Vermello" />
+				</div>
+				<div class="small-7 small-offet-1 columns navigation">
+					<ul>
+						<li><a href="#">web development</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">quote request</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="small-12 columns container">
+					
+					<div class="row">
+						<div class="small-4 columns process">
+							
+							<h1>The Process</h1>
+							
+							<div class="row">
+								<div class="small-12 small-offset-1 columns meet">
+									<h1>Meet</h1>
+									<p>You can choose to either fill one of our quote request forms, email us or phone us to make first contact.
+									We are happy to answer any of your questions. You will receive a quote for your project within 5 business days.</p>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="small-12 columns plan">
+									<h1>Plan</h1>
+									<p>
+									<br />
+									<br />
+									</p>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="small-10 small-offset-2 columns mockup">
+									<h1>Mockups & Design</h1>
+									<p>
+									<br />
+									<br />
+									</p>
+								</div>
+							</div>
+								
+							<div class="row">
+								<div class="small-9 small-offset-3 columns testing">
+									<h1>Testing</h1>
+									<p>
+									<br />
+									<br />
+									</p>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="small-8 small-offset-4 columns launch">
+									<h1>Launch</h1>
+									<p>
+									<br />
+									<br />
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		
+        
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

@@ -1,0 +1,4 @@
+vm_core:
+    resource: "@VMCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+

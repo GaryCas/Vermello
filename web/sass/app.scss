@@ -1,0 +1,104 @@
+@import "compass";
+@import "settings";
+@import "normalize";
+@import "foundation";
+@import "mixins";
+
+/*  
+* This stylesheet file uses Zurb Foundation & Compass, and contains
+* the default layout / main styles for the application.
+*
+*/
+/* ----------------------------------------- 
+   Table of Contents
+--------------------------------------------
+:: 1. Override Zurb Foundation
+:: 2. Main Layout / Styles
+:: 3. Global Styles
+*/
+
+
+/* -----------------------------------------
+   1.	  Override Zurb Foundation
+-------------------------------------------- 
+--------------------------------------------*/
+
+.row {
+	max-width: 100%;
+}
+
+/* -----------------------------------------
+   	2.    	Main Layout & Styles
+-------------------------------------------- 
+--------------------------------------------*/
+
+html, body {
+	font-family: "Times New Roman";
+}
+
+body {		   
+	font-size:emCalc(14px);
+}
+
+.global-wrapper {
+	padding-top:1em;
+}
+
+.header {
+	margin-top:1em;
+	margin-bottom:2em;
+	height:130px;
+}
+
+.logo {
+	margin-left:1em;
+}
+
+.navigation {
+	
+	ul {
+		padding-top:84px;
+		list-style:none;
+		
+		li {
+			display:inline-block;		
+			
+			a {
+				font-family:"Palatino Linotype";
+				font-size:emCalc(26px);
+				background-color:#d77047;
+				color:#FFF;
+				margin-left:0.5em;
+				margin-right:0.5em;
+				padding:2px 0.5em 2px 0.5em;
+				
+				&:hover {
+					background-color:#d04e2f;
+				}
+			}
+		}
+		
+	}
+}
+
+.container {
+	min-height:400px;
+}
+
+.process {
+	margin-left:3em;
+	
+	h1 {
+		color:#aeaeae;
+	}
+	
+	.row h1 {
+		color:#739bb8;
+		font-size:emCalc(25px);
+	}
+	
+	.row p {
+		font-size:emCalc(15px);
+	}
+}
+
