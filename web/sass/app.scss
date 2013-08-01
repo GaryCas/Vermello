@@ -38,6 +38,20 @@ html, body {
 
 body {		   
 	font-size:emCalc(14px);
+	margin:0;
+	padding:0;
+	background-color:#373737;
+}
+
+.top-bar {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	background-color:#000;
+	@include opacity(0.4);
+	height:25px;
+	width:100%;
 }
 
 .global-wrapper {
@@ -45,9 +59,12 @@ body {
 }
 
 .header {
-	margin-top:1em;
-	margin-bottom:2em;
-	height:130px;
+	position:relative;
+	z-index:1;
+	padding-top:1em;
+	height:160px;
+	background-color:#fff;
+	@include single-box-shadow(#ccc);
 }
 
 .logo {
@@ -55,33 +72,47 @@ body {
 }
 
 .navigation {
+	position:relative;
+	background-color:#fff;
+	@include filter-gradient(#ffffff, #efefef, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(239,239,239,1) 100%));
+	height:150px;
 	
 	ul {
-		padding-top:84px;
 		list-style:none;
 		
 		li {
-			display:inline-block;		
+			display:inline-block;
+			margin-top:-2px;
+			padding-top:1em;
 			
 			a {
 				font-family:"Palatino Linotype";
-				font-size:emCalc(26px);
-				background-color:#d77047;
-				color:#FFF;
-				margin-left:0.5em;
-				margin-right:0.5em;
-				padding:2px 0.5em 2px 0.5em;
+				font-size:emCalc(24px);
+				color:#756868;
+				margin:0.5em;
+				padding:7px;
+				padding-bottom:5px;
+				padding-top:1em;
+				@include border-bottom-radius(8px);
+				background-color: #efefef;
 				
 				&:hover {
-					background-color:#d04e2f;
-				}
+					background-color:#cfcfcf;
+				}	
+			}
+			
+			a.active {
+				border-bottom:0;
+				color:#fff;
+				background-color: #bf3d26;
 			}
 		}
-		
 	}
 }
 
 .container {
+	background-color:#efefef;
 	min-height:400px;
 }
 

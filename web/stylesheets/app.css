@@ -7256,68 +7256,117 @@ html, body {
 /* line 39, ../sass/app.scss */
 body {
   font-size: 0.875em;
+  margin: 0;
+  padding: 0;
+  background-color: #373737;
 }
 
-/* line 43, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  height: 25px;
+  width: 100%;
+}
+
+/* line 57, ../sass/app.scss */
 .global-wrapper {
   padding-top: 1em;
 }
 
-/* line 47, ../sass/app.scss */
+/* line 61, ../sass/app.scss */
 .header {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  height: 130px;
+  position: relative;
+  z-index: 1;
+  padding-top: 1em;
+  height: 160px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #cccccc;
+  -moz-box-shadow: 0px 0px 5px #cccccc;
+  box-shadow: 0px 0px 5px #cccccc;
 }
 
-/* line 53, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 .logo {
   margin-left: 1em;
 }
 
-/* line 59, ../sass/app.scss */
+/* line 74, ../sass/app.scss */
+.navigation {
+  position: relative;
+  background-color: #fff;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEFEFEF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #efefef));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
+  height: 150px;
+}
+/* line 81, ../sass/app.scss */
 .navigation ul {
-  padding-top: 84px;
   list-style: none;
 }
-/* line 63, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 .navigation ul li {
   display: inline-block;
+  margin-top: -2px;
+  padding-top: 1em;
 }
-/* line 66, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 .navigation ul li a {
   font-family: "Palatino Linotype";
-  font-size: 1.625em;
-  background-color: #d77047;
-  color: #FFF;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding: 2px 0.5em 2px 0.5em;
+  font-size: 1.5em;
+  color: #756868;
+  margin: 0.5em;
+  padding: 7px;
+  padding-bottom: 5px;
+  padding-top: 1em;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #efefef;
 }
-/* line 75, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .navigation ul li a:hover {
-  background-color: #d04e2f;
+  background-color: #cfcfcf;
+}
+/* line 105, ../sass/app.scss */
+.navigation ul li a.active {
+  border-bottom: 0;
+  color: #fff;
+  background-color: #bf3d26;
 }
 
-/* line 84, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .container {
+  background-color: #efefef;
   min-height: 400px;
 }
 
-/* line 88, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 .process {
   margin-left: 3em;
 }
-/* line 91, ../sass/app.scss */
+/* line 122, ../sass/app.scss */
 .process h1 {
   color: #aeaeae;
 }
-/* line 95, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 .process .row h1 {
   color: #739bb8;
   font-size: 1.5625em;
 }
-/* line 100, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .process .row p {
   font-size: 0.9375em;
 }
