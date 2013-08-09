@@ -7258,7 +7258,7 @@ body {
   font-size: 0.875em;
   margin: 0;
   padding: 0;
-  background-color: #373737;
+  background-color: #fff;
 }
 
 /* line 46, ../sass/app.scss */
@@ -7284,89 +7284,190 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 1em;
-  height: 160px;
+  height: 200px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 5px #cccccc;
-  -moz-box-shadow: 0px 0px 5px #cccccc;
-  box-shadow: 0px 0px 5px #cccccc;
+}
+/* line 68, ../sass/app.scss */
+.header div.quote {
+  text-align: center;
+  margin-top: -1em;
+}
+/* line 72, ../sass/app.scss */
+.header div.quote button.quote {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0.6em 4em 0.6em 4em;
+  font-family: "Quicksand";
+  font-size: 1.125em;
+  background-color: #a22727;
+  color: #f8e8e8;
+  border: 0;
 }
 
-/* line 70, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 .logo {
   margin-left: 1em;
 }
+/* line 87, ../sass/app.scss */
+.logo img {
+  min-width: 500px;
+}
 
-/* line 74, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .navigation {
   position: relative;
   background-color: #fff;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFEFEFEF');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #efefef));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #efefef 100%);
-  height: 150px;
+  min-height: 150px;
 }
-/* line 81, ../sass/app.scss */
+/* line 97, ../sass/app.scss */
 .navigation ul {
+  position: relative;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
-/* line 84, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 .navigation ul li {
-  display: inline-block;
-  margin-top: -2px;
-  padding-top: 1em;
-}
-/* line 89, ../sass/app.scss */
-.navigation ul li a {
-  font-family: "Palatino Linotype";
-  font-size: 1.5em;
-  color: #756868;
-  margin: 0.5em;
-  padding: 7px;
-  padding-bottom: 5px;
-  padding-top: 1em;
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
   -moz-border-radius-bottomright: 8px;
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: #efefef;
-}
-/* line 100, ../sass/app.scss */
-.navigation ul li a:hover {
-  background-color: #cfcfcf;
-}
-/* line 105, ../sass/app.scss */
-.navigation ul li a.active {
-  border-bottom: 0;
-  color: #fff;
-  background-color: #bf3d26;
-}
-
-/* line 114, ../sass/app.scss */
-.container {
-  background-color: #efefef;
-  min-height: 400px;
-}
-
-/* line 119, ../sass/app.scss */
-.process {
-  margin-left: 3em;
+  min-height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  margin-left: -1em;
+  padding-top: 5px;
+  padding-right: 8px;
+  text-align: right;
+  width: 90%;
 }
 /* line 122, ../sass/app.scss */
-.process h1 {
-  color: #aeaeae;
+.navigation ul li:hover {
+  background-color: #cfcfcf;
 }
 /* line 126, ../sass/app.scss */
-.process .row h1 {
-  color: #739bb8;
-  font-size: 1.5625em;
+.navigation ul li a {
+  font-family: "Palatino Linotype";
+  font-size: 1.5em;
+  color: #756868;
 }
 /* line 131, ../sass/app.scss */
-.process .row p {
-  font-size: 0.9375em;
+.navigation ul li a:hover {
+  color: #ffffff;
+}
+/* line 137, ../sass/app.scss */
+.navigation ul li.active {
+  width: 100%;
+  background-color: #be3d26;
+}
+/* line 141, ../sass/app.scss */
+.navigation ul li.active a {
+  color: #fff;
+}
+/* line 146, ../sass/app.scss */
+.navigation ul li.focus {
+  width: 100%;
+  background-color: #bd5f4f;
+}
+/* line 150, ../sass/app.scss */
+.navigation ul li.focus a {
+  color: #fff;
+}
+
+/* line 157, ../sass/app.scss */
+.container {
+  min-height: 400px;
+  background-color: #fff;
+}
+
+/* line 162, ../sass/app.scss */
+.js-disabled .process .box {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 164, ../sass/app.scss */
+.process {
+  max-width: 95%;
+  margin-right: 2em;
+  min-height: 400px;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+/* line 171, ../sass/app.scss */
+.process .title {
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #351f1f;
+  margin-bottom: 0;
+  border: 1px solid white;
+  border-bottom: 0;
+}
+/* line 178, ../sass/app.scss */
+.process .title h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #efefef;
+}
+/* line 185, ../sass/app.scss */
+.process .box {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+  min-height: 200px;
+  padding-left: 1em;
+  border: 1px solid white;
+}
+/* line 191, ../sass/app.scss */
+.process .box h1 {
+  font-size: 2.1875em;
+  color: #fff;
+}
+/* line 196, ../sass/app.scss */
+.process .box p {
+  font-family: "Quicksand Regular";
+  font-size: 1.125em;
+  text-align: right;
+  color: #fff;
+}
+/* line 203, ../sass/app.scss */
+.process .box img {
+  float: left;
+}
+/* line 208, ../sass/app.scss */
+.process .meet {
+  border-top: 0;
+  background-color: #453a3a;
+}
+/* line 213, ../sass/app.scss */
+.process .plan {
+  background-color: #5a4c4c;
+}
+/* line 217, ../sass/app.scss */
+.process .mockup {
+  background-color: #4b3232;
+}
+/* line 221, ../sass/app.scss */
+.process .testing {
+  background-color: #351f1f;
+}
+/* line 226, ../sass/app.scss */
+.process .launch {
+  background-color: #119f14;
 }

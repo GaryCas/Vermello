@@ -1,12 +1,12 @@
 /**
  * Setup AJAX application
  */
-$(document).ready(function() {
+/** $(document).ready(function() {
 	
 	/*
 	 * Click events on all links
 	 */
-    var History = window.History;
+    /** var History = window.History;
     
     if (History.emulated.pushState && History.getHash()) {
     	History.Adapter.trigger(window, "statechange");
@@ -20,15 +20,15 @@ $(document).ready(function() {
     $(this).on('click', 'a', function(event) {
         event.preventDefault();
         History.pushState(null, $('title').html(), $(this).attr('href'));
-    });
+    }); 
 	
-});
+});**/
 
 /**
  * 
  * @param href
  */
-function goToPage(href) {
+/** function goToPage(href) {
 
 	$.ajax({
 		url: href,
@@ -52,7 +52,7 @@ function goToPage(href) {
  * @param options
  * @param speed
  */
-function loadSection(selector, options, speed, response) {
+/** function loadSection(selector, options, speed, response) {
 	
 	var section = $(selector);
 	var saved_options = {};
@@ -71,7 +71,7 @@ function loadSection(selector, options, speed, response) {
 			});
 		});
 	}
-}
+} **/
 
 
 
