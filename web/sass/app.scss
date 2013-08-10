@@ -4,12 +4,14 @@
 @import "foundation";
 @import "mixins";
 
-/*  
+@include font-face("Quicksand Regular", font-files("Quicksand_Regular.otf"));
+
+/* 
 * This stylesheet file uses Zurb Foundation & Compass, and contains
 * the default layout / main styles for the application.
 *
 */
-/* ----------------------------------------- 
+/* -----------------------------------------
    Table of Contents
 --------------------------------------------
 :: 1. Override Zurb Foundation
@@ -19,213 +21,255 @@
 
 
 /* -----------------------------------------
-   1.	  Override Zurb Foundation
--------------------------------------------- 
+   1.      Override Zurb Foundation
+--------------------------------------------
 --------------------------------------------*/
 
 .row {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /* -----------------------------------------
-   	2.    	Main Layout & Styles
--------------------------------------------- 
+       2.        Main Layout & Styles
+--------------------------------------------
 --------------------------------------------*/
 
 html, body {
-	font-family: "Times New Roman";
+    font-family: "Times New Roman";
 }
 
-body {		   
-	font-size:emCalc(14px);
-	margin:0;
-	padding:0;
-	background-color:#fff;
+body {          
+    font-size:emCalc(14px);
+    margin:0;
+    padding:0;
+    background-color:#fff;
 }
 
 .top-bar {
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:2;
-	background-color:#000;
-	@include opacity(0.4);
-	height:25px;
-	width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    background-color:#000;
+    @include opacity(0.4);
+    height:25px;
+    width:100%;
 }
 
 .global-wrapper {
-	padding-top:1em;
+    padding-top:1em;
 }
 
 .header {
-	position:relative;
-	z-index:1;
-	padding-top:1em;
-	height:200px;
-	background-color:#fff;
-	
-	div.quote {
-		text-align:center;
-		margin-top:-1em;
-		
-		button.quote {
-			@include border-bottom-radius(5px);
-			padding:0.6em 4em 0.6em 4em;
-			font-family:"Quicksand";
-			font-size:emCalc(18px);
-			background-color:#a22727;
-			color:#f8e8e8;
-			border:0;
-		}
-	}
+    position:relative;
+    z-index:1;
+    padding-top:1em;
+    height:200px;
+    background-color:#fff;
+   
+    div.quote {
+        text-align:right;
+        margin-right:1em;
+        margin-top:-1em;
+        border-top:0;
+       
+        button.quote {
+            @include border-bottom-radius(5px);
+            padding:0.6em 3em 0.6em 3em;
+            font-family:"Quicksand Regular";
+            font-size:emCalc(17px);
+            background-color:#B8383D;
+            color:#f8e8e8;
+            border:0;
+       
+            &:hover {
+                @include single-box-shadow(#8a2226, 0, 0, 15px, 0, true);
+            }
+        }
+    }
 }
 
 .logo {
-	margin-left:1em;
-	
-	img {
-		min-width:500px;
-	}
+    margin-left:1em;
+   
+    img {
+        min-width:500px;
+    }
 }
 
+.js-disabled .navigation ul li {left:0}
+
 .navigation {
-	position:relative;
-	background-color:#fff;
-	min-height:150px;
-	
-	ul {
-		position:relative;
-		list-style:none;
-		margin-left:0;
-		padding-left:0;
-		
-		li {
-			-webkit-transition: all 0.5s ease;
-    		-moz-transition: all 0.5s ease;
-    		-o-transition: all 0.5s ease;
-    		transition: all 0.5s ease;
-			
-			cursor:pointer;
-			@include border-right-radius(8px);
-			background-color: #efefef;
-			min-height:50px;
-			padding:0;
-			margin:0;
-			margin-top:1em;
-			margin-left:-1em;
-			padding-top:5px;
-			padding-right:8px;
-			text-align:right;
-			width:90%;
-			
-			&:hover {
-				background-color:#cfcfcf;
-			}
-			
-			a {		
-				font-family:"Palatino Linotype";
-				font-size:emCalc(24px);
-				color:#756868;
-				
-				&:hover {
-					color:#ffffff;
-				}	
-			}
-		}
-		
-		li.active {
-			width:100%;	
-			background-color: #be3d26;
-				
-			a {
-				color:#fff;
-			}			
-		}
-		
-		li.focus {
-			width:100%;	
-			background-color: #bd5f4f;
-				
-			a {
-				color:#fff;
-			}
-		}
-	}
+    position:relative;
+    background-color:#fff;
+    min-height:150px;
+   
+    ul {
+        position:relative;
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+       
+        li {
+        
+            position:relative;
+            cursor:pointer;
+            @include border-right-radius(8px);
+            background-color: #efefef;
+            min-height:50px;
+            padding:0;
+            margin:0;
+            margin-top:1em;
+            margin-left:-1em;
+            padding-top:5px;
+            padding-right:8px;
+            text-align:right;
+            width:90%;
+            left:-250px;
+           
+            &:hover {
+                background-color:#cfcfcf;
+            }
+           
+            a {       
+                font-family:"Palatino Linotype";
+                font-size:emCalc(24px);
+                color:#756868;
+               
+                &:hover {
+                    color:#ffffff;
+                }   
+            }
+        }
+       
+        li.active {
+            width:100%;   
+            background-color: #B8383D;
+            left:0;
+               
+            a {
+                color:#fff;
+            }           
+        }
+       
+        li.focus {
+            width:100%;   
+            background-color: #B8383D;
+               
+            a {
+                color:#fff;
+            }
+        }
+       
+        li.client_area {
+            background-color:#351F1F;
+            color:#fff;
+        }
+    }
 }
 
 .container {
-	min-height:400px;
-	background-color:#fff;
+    min-height:400px;
+    background-color:#fff;
 }
 
 .js-disabled .process .box {@include opacity(1)}
 
 .process {
-	max-width:95%;
-	margin-right:2em;
-	min-height:400px;
-	margin-left:2em;
-	margin-top:1em;
-	
-	.title {
-		@include border-top-radius(8px);
-		background-color:#351f1f;
-		margin-bottom:0;
-		border:1px solid #fff;
-		border-bottom:0;
-		
-		h1 {
-			font-size:emCalc(40px);
-			text-align:center;
-			color:#efefef;
-		}
-	}
-	
-	.box {
-		@include opacity(0.1);
-		min-height:200px;
-		padding-left:1em;
-		border:1px solid #fff;
-		
-		h1 {
-			font-size:emCalc(35px);
-			color:#fff;
-		}
-		
-		p {
-			font-family:"Quicksand Regular";
-			font-size:emCalc(18px);
-			text-align:right;
-			color:#fff;
-		}
-		
-		img {
-			float:left;
-		}
-	}
-	
-	.meet {
-			border-top:0;
-			background-color:#453a3a;
-	}
-	
-	.plan {
-			background-color:#5a4c4c;
-	}
-	
-	.mockup {
-			background-color:#4b3232;
-	}
-	
-	.testing {
-			background-color:#351f1f;
-			
-	}
-	
-	.launch {
-			background-color:#119f14;
-	}
-	
+    max-width:95%;
+    margin-right:2em;
+    min-height:400px;
+    margin-left:2em;
+   
+    .title {
+        @include border-top-radius(8px);
+        margin-bottom:0;
+        border:1px solid #fff;
+        border-bottom:0;
+       
+        h1 {
+            font-size:emCalc(40px);
+            text-align:right;
+            color:#972f1c;
+            padding-right:0;
+            margin-right:-0.5em;
+        }
+    }
+   
+    .box {
+        @include opacity(0.1);
+        min-height:235px;
+        padding-left:1em;
+        border:1px solid #fff;
+       
+        h1 {
+            font-size:emCalc(35px);
+            color:#fff;
+        }
+       
+        p {
+            font-family:"Quicksand Regular";
+            font-size:emCalc(19px);
+            text-align:left;
+            color:#fff;
+        }
+       
+        img.icon {
+            float:right;
+        }
+       
+        a > img {
+            position:relative;
+           
+            &:hover {
+                top:1px;
+                left:1px;
+            }
+        }
+    }
+   
+    .meet {
+            background-color:#453a3a;
+            @include border-top-left-radius(8px);
+            border-top:0;
+            border-left:0;
+    }
+   
+    .plan {
+            background-color:#5a4c4c;
+            @include border-top-right-radius(8px);
+            border-top:0;
+            border-right:0;
+    }
+   
+    .dev {
+            background-color:#4b3232;
+            @include border-bottom-left-radius(8px);
+            border-bottom:0;
+            border-left:0;
+            border-bottom:0;
+           
+            a {
+                color:#301a1a;
+               
+                &:hover {
+                    text-decoration:underline;
+                }
+            }
+    }
+   
+    .testing {
+            background-color:#351f1f;
+            border-bottom:0;
+    }
+   
+    .launch {
+            background-color:#2a9b1b;
+            @include border-bottom-right-radius(8px);
+            border-bottom:0;
+            border-right:0;   
+    }
+   
 }
+
 

@@ -6,7 +6,12 @@
         
         {% block stylesheets %}
         	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-        	<script src="{{ asset('javascripts/common/setup.js') }}" ></script>
+        	<script src="{{ asset('javascripts/jquery/jquery.color.js') }}" ></script>
+        	
+        	<script src="{{ asset('foundation/js/foundation/foundation.js') }}"></script>
+        	<script src="{{ asset('foundation/js/vendor/custom.modernizr.js') }}"></script>
+        	
+        	<script src="{{ asset('javascripts/common/setup.js') }}" ></script>       	
         	
         	<link rel="stylesheet" type="text/css" href="{{ asset('stylesheets/app.css') }}" />
         {% endblock %}
@@ -23,7 +28,7 @@
 				<div class="small-4 columns logo">
 					<img src="{{ asset('assets/images/logo.png') }}" alt="Vermello" />
 				</div>
-				<div class="small-7 small-offet-1 columns quote">
+				<div class="small-2 small-offset-5 columns quote">
 					<p><button class="quote">FREE QUOTE</button></p>
 				</div>
 			</div>
@@ -36,6 +41,8 @@
 						<li><a href="#">portfolio</a></li>
 						<li><a href="#">products & services</a></li>
 						<li><a href="#">quote request</a></li>
+						<br />
+						<li class="client_area"><a href="#">client area</a></li>
 					</ul>
 				</div>
 				
@@ -46,7 +53,7 @@
 							
 							<div class="row">
 								<div class="small-6 columns title">
-									<h1>Want to hire us?</h1>
+									<h1>Wish to hire us?</h1>
 								</div>
 							</div>
 							
@@ -55,28 +62,31 @@
 									
 									<h1>Meet</h1>
 									
-									<img src="{{ asset('assets/images/icons/process/meet.png') }}">
+									<img src="{{ asset('assets/images/icons/process/meet.png') }}" alt="Meet" class="icon">
 									
-									<p>You can choose to either fill one of our quote request forms, email us or phone us to make first contact.
-									We are happy to answer any of your questions. You will receive a quote for your project within 5 business days.</p>
+									<p>You can choose to either fill one of our quote request forms <span><a href="#"><img src="{{ asset('assets/images/icons/process/form.png') }}" alt="Quote Request"></a></span>, email us <a href="#"><img src="{{ asset('assets/images/icons/process/email.png') }}" alt="contact@vermello-designs.com"></a> or phone us <a href="#"><img src="{{ asset('assets/images/icons/process/phone.png') }}" alt="email"></a><br />
+									We are happy to answer any of your questions. Your quote will be sent to you by email within 2 business days.</p>
 								</div>
 								
 								<div class="small-6 columns box plan">
 									
 									<h1>Plan</h1>
 									
-									<img src="{{ asset('assets/images/icons/process/plan.png') }}">
+									<img src="{{ asset('assets/images/icons/process/plan.png') }}" alt="Plan" class="icon" >
 									
+									<p>Following the initial meetup, we plan your project in details. Mockups are used to give you a global visual idea of the product. We talk strategy, and agree on your goals and priorities.</p>
 									
 								</div>
 							</div>
 							
 							<div class="row">
-								<div class="small-4 columns box mockup">
+								<div class="small-4 columns box dev">
 									
-									<h1>Mockups & Design</h1>
+									<h1>Dev & Design</h1>
 									
-									<p></p>
+									<img src="{{ asset('assets/images/icons/process/gears.png') }}" alt="Dev / Design" class="icon" >
+									
+									<p>You can keep track of all the documents about the development of your product on our <a href="#">client area</a>. You receive notifications of any update either by email or sms.</p>
 									
 								</div>
 								
@@ -84,7 +94,9 @@
 									
 									<h1>Testing</h1>
 									
-									<p></p>
+									<img src="{{ asset('assets/images/icons/process/test-tube.png') }}" alt="Testing" class="icon" >
+									
+									<p>We make sure there isn't any bug, make the last checks on security, and revise the quality of your product. It needs to be exactly the way you wanted it.</p>
 									
 								</div>
 							
@@ -92,80 +104,30 @@
 								
 									<h1>Launch</h1>
 									
-									<img src="{{ asset('assets/images/icons/process/launch.png') }}">
+									<img src="{{ asset('assets/images/icons/process/launch.png') }}" alt="Launch" class="icon">
 									
-									<p></p>
+									<p>Your product is ready to go live.
+									<br />
+									We provide full support free of charge for 6 months after its completion.
+									</p>
 									
 								</div>
-							</div>
-								
+							</div>	
 							</div>
 						</div>
 					</div>
-					
-					
-					<!--
-					<div class="row">
-						<div class="small-4 columns process">
-							
-							<h1>The Process</h1>
-							
-							<div class="row">
-								<div class="small-12 small-offset-1 columns meet">
-									<h1>Meet</h1>
-									
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="small-12 columns plan">
-									<h1>Plan</h1>
-									<p>
-									<br />
-									<br />
-									</p>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="small-10 small-offset-2 columns mockup">
-									<h1>Mockups & Design</h1>
-									<p>
-									<br />
-									<br />
-									</p>
-								</div>
-							</div>
-								
-							<div class="row">
-								<div class="small-9 small-offset-3 columns testing">
-									<h1>Testing</h1>
-									<p>
-									<br />
-									<br />
-									</p>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="small-8 small-offset-4 columns launch">
-									<h1>Launch</h1>
-									<p>
-									<br />
-									<br />
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					-->
-					
 				</div>
-			</div>
 			
 		
         
         {% endblock %}
+        
+        <!-- Check for Zepto support, load jQuery if necessary -->
+		<script>
+		  document.write('<script src=/foundation/js/vendor/'
+		    + ('__proto__' in {} ? 'zepto' : 'jquery')
+		    + '.js><\/script>');
+		</script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

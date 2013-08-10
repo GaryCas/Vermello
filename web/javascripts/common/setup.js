@@ -6,31 +6,43 @@ $(document).ready( function() {
 	// javascript enabled
 	$('body').removeClass('js-disabled');
 	
+	// foundation
+	$(document).foundation();
+	
 	// navigation effects
-	$('.navigation li').hover(function(){
-		$(this).addClass('focus');	
+	 
+	$('.navigation li:not(.active)').each(function(){
+		var duration = Math.floor((Math.random() * 1500) + 500);
+		$(this).animate({left: 0}, duration, function(){});
+	});
+	
+	$('.navigation li:not(.active):not(.client_area)').hover(function(){
+		// $(this).addClass('focus');
+		$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);
+		$('a', this).stop().animate({color:'#fff'}, 700);
+		
 	}, function(){	
-		$(this).removeClass('focus');
+		// $(this).removeClass('focus');
+		$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500);
+		$('a', this).stop().animate({color:'#756868'}, 700);
 	});
 	
 	// process effects
-	var css_classes = new Array();
-	css_classes[0] = '.meet';
-	css_classes[1] = '.plan';
-	css_classes[2] = '.mockup';
-	css_classes[3] = '.testing';
-	css_classes[4] = '.launch';
+	var css_classes = ['meet', 'plan', 'dev', 'testing', 'launch'];
 	
 	var duration = 1000;
-	
-	for (var i = 0; i <= css_classes.length; i++) {
+
+	for (var i = 0; i <= css_classes.length - 1; i++) {
 		
-		$('.container .process ' + css_classes[i]).animate({
-			opacity:1
+		// onload opacity
+		var box = $('.container .process .' + css_classes[i]);
+		
+		box.animate({
+			opacity: 1
 			}, duration, function () {}
 		);
 		
-		duration += 300;
+		duration += 400;
 	}
-	
+
 });

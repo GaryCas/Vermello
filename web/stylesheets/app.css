@@ -7223,12 +7223,17 @@ a.th {
 /**
 * Responsive Background
 */
-/*  
+@font-face {
+  font-family: "Quicksand Regular";
+  src: url('/stylesheets/fonts/Quicksand_Regular.otf') format('opentype');
+}
+
+/* 
 * This stylesheet file uses Zurb Foundation & Compass, and contains
 * the default layout / main styles for the application.
 *
 */
-/* ----------------------------------------- 
+/* -----------------------------------------
    Table of Contents
 --------------------------------------------
 :: 1. Override Zurb Foundation
@@ -7236,24 +7241,24 @@ a.th {
 :: 3. Global Styles
 */
 /* -----------------------------------------
-   1.	  Override Zurb Foundation
--------------------------------------------- 
+   1.      Override Zurb Foundation
+--------------------------------------------
 --------------------------------------------*/
-/* line 26, ../sass/app.scss */
+/* line 28, ../sass/app.scss */
 .row {
   max-width: 100%;
 }
 
 /* -----------------------------------------
-   	2.    	Main Layout & Styles
--------------------------------------------- 
+       2.        Main Layout & Styles
+--------------------------------------------
 --------------------------------------------*/
-/* line 35, ../sass/app.scss */
+/* line 37, ../sass/app.scss */
 html, body {
   font-family: "Times New Roman";
 }
 
-/* line 39, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 body {
   font-size: 0.875em;
   margin: 0;
@@ -7261,7 +7266,7 @@ body {
   background-color: #fff;
 }
 
-/* line 46, ../sass/app.scss */
+/* line 48, ../sass/app.scss */
 .top-bar {
   position: absolute;
   top: 0;
@@ -7274,12 +7279,12 @@ body {
   width: 100%;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 59, ../sass/app.scss */
 .global-wrapper {
   padding-top: 1em;
 }
 
-/* line 61, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 .header {
   position: relative;
   z-index: 1;
@@ -7287,12 +7292,14 @@ body {
   height: 200px;
   background-color: #fff;
 }
-/* line 68, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 .header div.quote {
-  text-align: center;
+  text-align: right;
+  margin-right: 1em;
   margin-top: -1em;
+  border-top: 0;
 }
-/* line 72, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .header div.quote button.quote {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -7300,42 +7307,50 @@ body {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: 0.6em 4em 0.6em 4em;
-  font-family: "Quicksand";
-  font-size: 1.125em;
-  background-color: #a22727;
+  padding: 0.6em 3em 0.6em 3em;
+  font-family: "Quicksand Regular";
+  font-size: 1.0625em;
+  background-color: #B8383D;
   color: #f8e8e8;
   border: 0;
 }
+/* line 85, ../sass/app.scss */
+.header div.quote button.quote:hover {
+  -webkit-box-shadow: inset 0 0 15px 0 #8a2226;
+  -moz-box-shadow: inset 0 0 15px 0 #8a2226;
+  box-shadow: inset 0 0 15px 0 #8a2226;
+}
 
-/* line 84, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .logo {
   margin-left: 1em;
 }
-/* line 87, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 .logo img {
   min-width: 500px;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
+.js-disabled .navigation ul li {
+  left: 0;
+}
+
+/* line 102, ../sass/app.scss */
 .navigation {
   position: relative;
   background-color: #fff;
   min-height: 150px;
 }
-/* line 97, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 .navigation ul {
   position: relative;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 103, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 .navigation ul li {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  position: relative;
   cursor: pointer;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;
@@ -7353,61 +7368,67 @@ body {
   padding-right: 8px;
   text-align: right;
   width: 90%;
+  left: -250px;
 }
-/* line 122, ../sass/app.scss */
+/* line 130, ../sass/app.scss */
 .navigation ul li:hover {
   background-color: #cfcfcf;
 }
-/* line 126, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .navigation ul li a {
   font-family: "Palatino Linotype";
   font-size: 1.5em;
   color: #756868;
 }
-/* line 131, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .navigation ul li a:hover {
   color: #ffffff;
 }
-/* line 137, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 .navigation ul li.active {
   width: 100%;
-  background-color: #be3d26;
+  background-color: #B8383D;
+  left: 0;
 }
-/* line 141, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 .navigation ul li.active a {
   color: #fff;
 }
-/* line 146, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 .navigation ul li.focus {
   width: 100%;
-  background-color: #bd5f4f;
+  background-color: #B8383D;
 }
-/* line 150, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
 .navigation ul li.focus a {
   color: #fff;
 }
+/* line 164, ../sass/app.scss */
+.navigation ul li.client_area {
+  background-color: #351F1F;
+  color: #fff;
+}
 
-/* line 157, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 .container {
   min-height: 400px;
   background-color: #fff;
 }
 
-/* line 162, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 .js-disabled .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 164, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
 .process {
   max-width: 95%;
   margin-right: 2em;
   min-height: 400px;
   margin-left: 2em;
-  margin-top: 1em;
 }
-/* line 171, ../sass/app.scss */
+/* line 184, ../sass/app.scss */
 .process .title {
   -moz-border-radius-topleft: 8px;
   -webkit-border-top-left-radius: 8px;
@@ -7415,59 +7436,98 @@ body {
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: #351f1f;
   margin-bottom: 0;
   border: 1px solid white;
   border-bottom: 0;
 }
-/* line 178, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 .process .title h1 {
   font-size: 2.5em;
-  text-align: center;
-  color: #efefef;
+  text-align: right;
+  color: #972f1c;
+  padding-right: 0;
+  margin-right: -0.5em;
 }
-/* line 185, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   opacity: 0.1;
-  min-height: 200px;
+  min-height: 235px;
   padding-left: 1em;
   border: 1px solid white;
 }
-/* line 191, ../sass/app.scss */
+/* line 205, ../sass/app.scss */
 .process .box h1 {
   font-size: 2.1875em;
   color: #fff;
 }
-/* line 196, ../sass/app.scss */
+/* line 210, ../sass/app.scss */
 .process .box p {
   font-family: "Quicksand Regular";
-  font-size: 1.125em;
-  text-align: right;
+  font-size: 1.1875em;
+  text-align: left;
   color: #fff;
 }
-/* line 203, ../sass/app.scss */
-.process .box img {
-  float: left;
-}
-/* line 208, ../sass/app.scss */
-.process .meet {
-  border-top: 0;
-  background-color: #453a3a;
-}
-/* line 213, ../sass/app.scss */
-.process .plan {
-  background-color: #5a4c4c;
-}
 /* line 217, ../sass/app.scss */
-.process .mockup {
-  background-color: #4b3232;
+.process .box img.icon {
+  float: right;
 }
 /* line 221, ../sass/app.scss */
+.process .box a > img {
+  position: relative;
+}
+/* line 224, ../sass/app.scss */
+.process .box a > img:hover {
+  top: 1px;
+  left: 1px;
+}
+/* line 231, ../sass/app.scss */
+.process .meet {
+  background-color: #453a3a;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top: 0;
+  border-left: 0;
+}
+/* line 238, ../sass/app.scss */
+.process .plan {
+  background-color: #5a4c4c;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top: 0;
+  border-right: 0;
+}
+/* line 245, ../sass/app.scss */
+.process .dev {
+  background-color: #4b3232;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+/* line 252, ../sass/app.scss */
+.process .dev a {
+  color: #301a1a;
+}
+/* line 255, ../sass/app.scss */
+.process .dev a:hover {
+  text-decoration: underline;
+}
+/* line 261, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
+  border-bottom: 0;
 }
-/* line 226, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 .process .launch {
-  background-color: #119f14;
+  background-color: #2a9b1b;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom: 0;
+  border-right: 0;
 }
