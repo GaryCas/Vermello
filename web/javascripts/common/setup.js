@@ -10,22 +10,23 @@ $(document).ready( function() {
 	$(document).foundation();
 	
 	// navigation effects
-	 
+	var longuest_duration = 0;
 	$('.navigation li:not(.active)').each(function(){
 		var duration = Math.floor((Math.random() * 1500) + 500);
 		$(this).animate({left: 0}, duration, function(){});
+		
+		if (duration > longuest_duration) {
+			longuest_duration = duration;
+		}
 	});
 	
-	$('.navigation li:not(.active):not(.client_area)').hover(function(){
-		// $(this).addClass('focus');
-		$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);
-		$('a', this).stop().animate({color:'#fff'}, 700);
-		
-	}, function(){	
-		// $(this).removeClass('focus');
-		$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500);
-		$('a', this).stop().animate({color:'#756868'}, 700);
-	});
+	setTimeout("$('.navigation li:not(.active):not(.client_area)').hover(function(){" +
+			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
+			"$('a', this).stop().animate({color:'#fff'}, 700);" +
+			"}, function(){ " +
+			"$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500); " +
+			"$('a', this).stop().animate({color:'#756868'}, 700);" +
+			"});", longuest_duration);
 	
 	// process effects
 	var css_classes = ['meet', 'plan', 'dev', 'testing', 'launch'];
