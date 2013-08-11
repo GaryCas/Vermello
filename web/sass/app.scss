@@ -131,7 +131,7 @@ body {
            
             a {       
                 font-family:"Palatino Linotype";
-                font-size:emCalc(24px);
+                font-size:emCalc(17px);
                 color:#756868;
                
                 &:hover {
@@ -176,6 +176,8 @@ body {
     }
 }
 
+@media #{$small} { .navigation ul li a {font-size:emCalc(22px);} }
+
 .js-disabled .navigation ul li {left:0}
 
 .container {
@@ -187,7 +189,7 @@ body {
     max-width:95%;
     margin-right:2em;
     min-height:400px;
-    margin-left:2em;
+    margin-left:0;
     margin-top:-1em;
    
     .title {
@@ -229,7 +231,7 @@ body {
         @include opacity(1);
         min-height:235px;
         padding-left:1em;
-        border:1px solid #fff;
+        border-bottom:1px solid #fff;
        
         h1 {
             font-size:emCalc(35px);
@@ -238,7 +240,7 @@ body {
        
         p {
             font-family:"Verdana";
-            font-size:emCalc(16px);
+            font-size:emCalc(15px);
             text-align:left;
             color:#fff;
         }
@@ -261,23 +263,15 @@ body {
     .meet {
             background-color:#453a3a;
             @include border-top-left-radius(8px);
-            border-top:0;
-            border-left:0;
+            @include border-top-right-radius(8px);
     }
    
     .plan {
             background-color:#5a4c4c;
-            @include border-top-right-radius(8px);
-            border-top:0;
-            border-right:0;
     }
    
     .dev {
             background-color:#4b3232;
-            @include border-bottom-left-radius(8px);
-            border-bottom:0;
-            border-left:0;
-            border-bottom:0;
            
             a {
                 color:#301a1a;
@@ -290,17 +284,59 @@ body {
    
     .testing {
             background-color:#351f1f;
-            border-bottom:0;
     }
    
     .launch {
             background-color:#2a9b1b;
-            @include border-bottom-right-radius(8px);
-            border-bottom:0;
-            border-right:0;   
+            @include border-bottom-right-radius(8px);  
     }
    
 }
+
+@media #{$small} {
+
+	.process { 
+		margin-left:2em;
+		
+		.box {
+			
+        	border:1px solid #fff;
+        	
+		 	p {
+				font-size:emCalc(15px);
+			}
+		}
+		
+		.meet {
+			@include border-top-right-radius(0px);
+			border-top:0;
+            border-left:0;
+		}
+		
+		.plan {
+			@include border-top-right-radius(8px);
+			border-top:0;
+            border-right:0;
+		}
+		
+		.dev {
+			@include border-bottom-left-radius(8px);
+			border-bottom:0;
+            border-left:0;
+            border-bottom:0;
+		}
+		
+		.testing {
+			border-bottom:0;
+		}
+		
+		.launch {
+			border-bottom:0;
+            border-right:0; 
+		}
+	} 
+}
+
 
 .js-disabled .process .box {@include opacity(1)}
 
