@@ -12,6 +12,7 @@ $(document).ready( function() {
 	// navigation effects
 	var longuest_duration = 0;
 	$('.navigation li:not(.active)').each(function(){
+		$(this).css('left', '-250px');
 		var duration = Math.floor((Math.random() * 1500) + 500);
 		$(this).animate({left: 0}, duration, function(){});
 		
@@ -22,12 +23,17 @@ $(document).ready( function() {
 	
 	// process effects
 	var duration = 1000;
-
+	var box = $('.container .process .box');
 	// onload opacity
-	$('.container .process .box').each(function(){	
+	box.each(function(){
+		
+		$(this).animate({
+			opacity: 0
+		}, 1);
+		
 		$(this).animate({
 			opacity: 1
-			}, duration, function () {}
+			}, duration
 		);
 		
 		duration += 400;

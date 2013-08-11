@@ -7363,7 +7363,7 @@ body {
   padding-right: 8px;
   text-align: right;
   width: 90%;
-  left: -250px;
+  left: 0;
 }
 /* line 128, ../sass/app.scss */
 .navigation ul li:hover {
@@ -7472,8 +7472,8 @@ body {
 }
 /* line 228, ../sass/app.scss */
 .process .box {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-  opacity: 0.1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
   min-height: 235px;
   padding-left: 1em;
   border: 1px solid white;
