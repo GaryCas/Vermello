@@ -21,22 +21,17 @@ $(document).ready( function() {
 	});
 	
 	// process effects
-	var css_classes = ['meet', 'plan', 'dev', 'testing', 'launch'];
-	
 	var duration = 1000;
 
-	for (var i = 0; i <= css_classes.length - 1; i++) {
-		
-		// onload opacity
-		var box = $('.container .process .' + css_classes[i]);
-		
-		box.animate({
+	// onload opacity
+	$('.container .process .box').each(function(){	
+		$(this).animate({
 			opacity: 1
 			}, duration, function () {}
 		);
 		
 		duration += 400;
-	}
+	});
 	
 	setTimeout("$('.navigation li:not(.active):not(.client_area)').hover(function(){" +
 			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
