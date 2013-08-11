@@ -189,22 +189,30 @@ body {
         border-bottom:0;
        
         h1 {
-            font-size:emCalc(40px);
+            font-size:emCalc(35px);
             text-align:right;
             color:#972f1c;
             padding-right:0;
-            margin-right:-0.5em;
+            margin-right:0;
             margin-bottom:0;
         }
         
         h2 {
         	font-size:emCalc(25px);
         	text-align:right;
-        	color:#a55040;
-        	margin-top:0;
+        	margin-right:1;
+        	color:#bc6f61;
+        	margin-top:5px;
         	
-        	span {
-        		text-decoration:underline;
+        	span.web {
+        		font-size:emCalc(20px);
+        		text-decoration:overline;
+        		color:#972f1c;
+        	}
+        	
+        	span.p-mark {
+        		font-size:emCalc(20px);
+        		color:#972f1c;
         	}
         }
     }
