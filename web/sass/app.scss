@@ -162,8 +162,18 @@ body {
         }
        
         li.client_area {
-            background-color:#351F1F;
-            color:#fff;
+            background-color:#4B3232;
+            
+            a {
+            	color:#ccc;
+            }
+            
+            &:hover {
+            	a {
+            		color:#fff;
+            	}
+            }
+            
         }
     }
 }
