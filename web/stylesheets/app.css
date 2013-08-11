@@ -7331,24 +7331,19 @@ body {
 }
 
 /* line 100, ../sass/app.scss */
-.js-disabled .navigation ul li {
-  left: 0;
-}
-
-/* line 102, ../sass/app.scss */
 .navigation {
   position: relative;
   background-color: #fff;
   min-height: 150px;
 }
-/* line 107, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 .navigation ul {
   position: relative;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 113, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 .navigation ul li {
   position: relative;
   cursor: pointer;
@@ -7370,50 +7365,55 @@ body {
   width: 90%;
   left: -250px;
 }
-/* line 130, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 .navigation ul li:hover {
   background-color: #cfcfcf;
 }
-/* line 134, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 .navigation ul li a {
   font-family: "Palatino Linotype";
   font-size: 1.5em;
   color: #756868;
 }
-/* line 139, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 .navigation ul li a:hover {
   color: #ffffff;
 }
-/* line 145, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .navigation ul li.active {
   width: 100%;
   background-color: #B8383D;
   left: 0;
 }
-/* line 150, ../sass/app.scss */
+/* line 148, ../sass/app.scss */
 .navigation ul li.active a {
   color: #fff;
 }
-/* line 155, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 .navigation ul li.focus {
   width: 100%;
   background-color: #B8383D;
 }
-/* line 159, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 .navigation ul li.focus a {
   color: #fff;
 }
-/* line 164, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 .navigation ul li.client_area {
   background-color: #4B3232;
 }
-/* line 167, ../sass/app.scss */
+/* line 165, ../sass/app.scss */
 .navigation ul li.client_area a {
   color: #ccc;
 }
-/* line 172, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 .navigation ul li.client_area:hover a {
   color: #fff;
+}
+
+/* line 179, ../sass/app.scss */
+.js-disabled .navigation ul li {
+  left: 0;
 }
 
 /* line 181, ../sass/app.scss */
@@ -7423,12 +7423,6 @@ body {
 }
 
 /* line 186, ../sass/app.scss */
-.js-disabled .process .box {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-/* line 188, ../sass/app.scss */
 .process {
   max-width: 95%;
   margin-right: 2em;
@@ -7436,7 +7430,7 @@ body {
   margin-left: 2em;
   margin-top: -1em;
 }
-/* line 195, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 .process .title {
   -moz-border-radius-topleft: 8px;
   -webkit-border-top-left-radius: 8px;
@@ -7448,7 +7442,7 @@ body {
   border: 1px solid white;
   border-bottom: 0;
 }
-/* line 201, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 .process .title h1 {
   font-size: 2.1875em;
   text-align: right;
@@ -7457,7 +7451,7 @@ body {
   margin-right: 0;
   margin-bottom: 0;
 }
-/* line 210, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 .process .title h2 {
   font-size: 1.5625em;
   text-align: right;
@@ -7465,18 +7459,18 @@ body {
   color: #bc6f61;
   margin-top: 5px;
 }
-/* line 217, ../sass/app.scss */
+/* line 215, ../sass/app.scss */
 .process .title h2 span.web {
   font-size: 1.25em;
   text-decoration: overline;
   color: #972f1c;
 }
-/* line 223, ../sass/app.scss */
+/* line 221, ../sass/app.scss */
 .process .title h2 span.p-mark {
   font-size: 1.25em;
   color: #972f1c;
 }
-/* line 230, ../sass/app.scss */
+/* line 228, ../sass/app.scss */
 .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   opacity: 0.1;
@@ -7484,32 +7478,32 @@ body {
   padding-left: 1em;
   border: 1px solid white;
 }
-/* line 236, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 .process .box h1 {
   font-size: 2.1875em;
   color: #fff;
 }
-/* line 241, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 .process .box p {
   font-family: "Verdana";
   font-size: 1em;
   text-align: left;
   color: #fff;
 }
-/* line 248, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 .process .box img.icon {
   float: right;
 }
-/* line 252, ../sass/app.scss */
+/* line 250, ../sass/app.scss */
 .process .box a > img {
   position: relative;
 }
-/* line 255, ../sass/app.scss */
+/* line 253, ../sass/app.scss */
 .process .box a > img:hover {
   top: 1px;
   left: 1px;
 }
-/* line 262, ../sass/app.scss */
+/* line 260, ../sass/app.scss */
 .process .meet {
   background-color: #453a3a;
   -moz-border-radius-topleft: 8px;
@@ -7518,7 +7512,7 @@ body {
   border-top: 0;
   border-left: 0;
 }
-/* line 269, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 .process .plan {
   background-color: #5a4c4c;
   -moz-border-radius-topright: 8px;
@@ -7527,7 +7521,7 @@ body {
   border-top: 0;
   border-right: 0;
 }
-/* line 276, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 .process .dev {
   background-color: #4b3232;
   -moz-border-radius-bottomleft: 8px;
@@ -7537,20 +7531,20 @@ body {
   border-left: 0;
   border-bottom: 0;
 }
-/* line 283, ../sass/app.scss */
+/* line 281, ../sass/app.scss */
 .process .dev a {
   color: #301a1a;
 }
-/* line 286, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 .process .dev a:hover {
   text-decoration: underline;
 }
-/* line 292, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
   border-bottom: 0;
 }
-/* line 297, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 .process .launch {
   background-color: #2a9b1b;
   -moz-border-radius-bottomright: 8px;
@@ -7558,4 +7552,10 @@ body {
   border-bottom-right-radius: 8px;
   border-bottom: 0;
   border-right: 0;
+}
+
+/* line 304, ../sass/app.scss */
+.js-disabled .process .box {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }

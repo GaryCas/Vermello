@@ -97,8 +97,6 @@ body {
     }
 }
 
-.js-disabled .navigation ul li {left:0}
-
 .navigation {
     position:relative;
     background-color:#fff;
@@ -178,12 +176,12 @@ body {
     }
 }
 
+.js-disabled .navigation ul li {left:0}
+
 .container {
     min-height:600px;
     background-color:#fff;
 }
-
-.js-disabled .process .box {@include opacity(1)}
 
 .process {
     max-width:95%;
@@ -302,5 +300,7 @@ body {
     }
    
 }
+
+.js-disabled .process .box {@include opacity(1)}
 
 
