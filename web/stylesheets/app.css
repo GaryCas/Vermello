@@ -7531,16 +7531,17 @@ body {
 /* line 276, ../sass/app.scss */
 .process .dev a {
   color: #301a1a;
-}
-/* line 279, ../sass/app.scss */
-.process .dev a:hover {
   text-decoration: underline;
 }
-/* line 285, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
+.process .dev a:hover {
+  text-decoration: none;
+}
+/* line 286, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
 }
-/* line 289, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 .process .launch {
   background-color: #2a9b1b;
   -moz-border-radius-bottomright: 8px;
@@ -7549,19 +7550,19 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 298, ../sass/app.scss */
+  /* line 299, ../sass/app.scss */
   .process {
     margin-left: 2em;
   }
-  /* line 301, ../sass/app.scss */
+  /* line 302, ../sass/app.scss */
   .process .box {
     border: 1px solid white;
   }
-  /* line 304, ../sass/app.scss */
+  /* line 306, ../sass/app.scss */
   .process .box p {
     font-size: 0.9375em;
   }
-  /* line 309, ../sass/app.scss */
+  /* line 311, ../sass/app.scss */
   .process .meet {
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
@@ -7569,7 +7570,7 @@ body {
     border-top: 0;
     border-left: 0;
   }
-  /* line 315, ../sass/app.scss */
+  /* line 317, ../sass/app.scss */
   .process .plan {
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
@@ -7577,7 +7578,7 @@ body {
     border-top: 0;
     border-right: 0;
   }
-  /* line 321, ../sass/app.scss */
+  /* line 323, ../sass/app.scss */
   .process .dev {
     -moz-border-radius-bottomleft: 8px;
     -webkit-border-bottom-left-radius: 8px;
@@ -7586,17 +7587,17 @@ body {
     border-left: 0;
     border-bottom: 0;
   }
-  /* line 328, ../sass/app.scss */
+  /* line 330, ../sass/app.scss */
   .process .testing {
     border-bottom: 0;
   }
-  /* line 332, ../sass/app.scss */
+  /* line 334, ../sass/app.scss */
   .process .launch {
     border-bottom: 0;
     border-right: 0;
   }
 }
-/* line 340, ../sass/app.scss */
+/* line 342, ../sass/app.scss */
 .js-disabled .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;

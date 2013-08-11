@@ -275,9 +275,10 @@ body {
            
             a {
                 color:#301a1a;
-               
+               	text-decoration:underline;
+               	
                 &:hover {
-                    text-decoration:underline;
+                    text-decoration:none;
                 }
             }
     }
