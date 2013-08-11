@@ -1,19 +1,14 @@
+// javascript enabled
+$('body').removeClass('js-disabled');
+
 /**
  * Set up common scripts. 
  */
 $(document).ready( function() {
 	
-	// javascript enabled
-	$('body').removeClass('js-disabled');
-	
-	// is internet explorer
-	var isIE = /*@cc_on!@*/false;
-	
 	// foundation
 	$(document).foundation();
-	
-	if (!isIE) {
-		
+
 		// navigation effects
 		var longuest_duration = 0;
 		$('.navigation li:not(.active)').each(function(){
@@ -45,6 +40,5 @@ $(document).ready( function() {
 				"$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500); " +
 				"$('a', this).stop().animate({color:'#756868'}, 700);" +
 				"});", longuest_duration);
-	}
 
 });
