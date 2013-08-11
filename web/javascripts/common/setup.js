@@ -20,14 +20,6 @@ $(document).ready( function() {
 		}
 	});
 	
-	setTimeout("$('.navigation li:not(.active):not(.client_area)').hover(function(){" +
-			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
-			"$('a', this).stop().animate({color:'#fff'}, 700);" +
-			"}, function(){ " +
-			"$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500); " +
-			"$('a', this).stop().animate({color:'#756868'}, 700);" +
-			"});", longuest_duration);
-	
 	// process effects
 	var css_classes = ['meet', 'plan', 'dev', 'testing', 'launch'];
 	
@@ -45,5 +37,13 @@ $(document).ready( function() {
 		
 		duration += 400;
 	}
+	
+	setTimeout("$('.navigation li:not(.active):not(.client_area)').hover(function(){" +
+			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
+			"$('a', this).stop().animate({color:'#fff'}, 700);" +
+			"}, function(){ " +
+			"$(this).stop().animate({width:'90%', backgroundColor: '#efefef'}, 500); " +
+			"$('a', this).stop().animate({color:'#756868'}, 700);" +
+			"});", longuest_duration);
 
 });
