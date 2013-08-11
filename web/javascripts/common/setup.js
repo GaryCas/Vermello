@@ -8,8 +8,6 @@ $(document).ready( function() {
 	
 	// foundation
 	$(document).foundation();
-
-	alert('test');
 	
 	// navigation effects
 	var longuest_duration = 0;
