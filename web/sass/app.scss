@@ -76,7 +76,7 @@ body {
         button.quote {
             @include border-bottom-radius(5px);
             padding:0.6em 3em 0.6em 3em;
-            font-family:"Quicksand Regular", "Times New Roman";
+            font-family:"Verdana";
             font-size:emCalc(17px);
             background-color:#B8383D;
             color:#f8e8e8;
@@ -208,8 +208,8 @@ body {
         }
        
         p {
-            font-family:"Quicksand Regular", "Times New Roman";
-            font-size:emCalc(19px);
+            font-family:"Verdana";
+            font-size:emCalc(16px);
             text-align:left;
             color:#fff;
         }

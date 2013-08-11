@@ -7308,7 +7308,7 @@ body {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 0.6em 3em 0.6em 3em;
-  font-family: "Quicksand Regular", "Times New Roman";
+  font-family: "Verdana";
   font-size: 1.0625em;
   background-color: #B8383D;
   color: #f8e8e8;
@@ -7463,8 +7463,8 @@ body {
 }
 /* line 210, ../sass/app.scss */
 .process .box p {
-  font-family: "Quicksand Regular", "Times New Roman";
-  font-size: 1.1875em;
+  font-family: "Verdana";
+  font-size: 1em;
   text-align: left;
   color: #fff;
 }
