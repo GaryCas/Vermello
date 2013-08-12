@@ -274,14 +274,13 @@ body {
             	float:right;
             	margin-top:-2em;
             	
-            	button {
+            	a {
+            		font-weight:bold;
             		position:relative;
             		@include border-radius(5px);
-            		padding:3px;
-            		
-            		a {
-            			color:#62747B;
-            		}
+            		padding:7px;
+            		color:#62747B;
+            		background-color:#fff;
             		
             		&:hover {
             			top:1px;
