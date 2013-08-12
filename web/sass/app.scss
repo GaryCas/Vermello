@@ -139,7 +139,12 @@ body {
                 }   
             }
         }
-       
+       	
+       	li.blank {
+       		background:none;
+       		min-height:25px;
+       	}
+       	
         li.active {
             width:100%;   
             background-color: #B8383D;
@@ -268,10 +273,15 @@ body {
             p.started {
             	float:right;
             	margin-top:-2em;
+            	
             	button {
             		position:relative;
             		@include border-radius(5px);
             		padding:3px;
+            		
+            		a {
+            			color:#62747B;
+            		}
             		
             		&:hover {
             			top:1px;
