@@ -9,6 +9,28 @@ $(document).ready( function() {
 	// foundation
 	$(document).foundation();
 	
+	$('.process .meet a.email, .process .meet a.phone').qtip({
+		position: {
+			corner: {
+				target: 'topMiddle',
+				tooltip: 'bottomMiddle'
+			}
+		},
+		style: {
+			background: '#282828',
+			color: '#fff',
+			border: {
+		         width: 1,
+		         radius: 5,
+		         color: '#282828'
+		      },
+		},
+		hide: {
+		      fixed: true,
+		      delay: 500
+		}
+	});
+	
 	// navigation effects
 	var longuest_duration = 0;
 	$('.navigation li:not(.active)').each(function(){

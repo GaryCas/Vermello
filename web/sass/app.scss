@@ -188,7 +188,7 @@ body {
 .process {
     max-width:95%;
     margin-right:2em;
-    min-height:400px;
+    min-height:600px;
     margin-left:0;
     margin-top:-1em;
    
@@ -295,12 +295,16 @@ body {
 }
 
 @media #{$small} {
-
+	
+	.container {
+		min-height:800px;
+	}
+	
 	.process { 
 		margin-left:2em;
 		
 		.box {
-			
+			min-height:330px;
         	border:1px solid #fff;
         	
 		 	p {
@@ -336,6 +340,19 @@ body {
             border-right:0; 
 		}
 	} 
+}
+
+@media #{$medium} {
+	
+	.container {
+		min-height:600px;
+	}
+	
+	.process {
+		.box {
+			min-height:235px;
+		}
+	}
 }
 
 
