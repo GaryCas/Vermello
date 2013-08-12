@@ -7492,29 +7492,30 @@ body {
 .process .box h1 {
   font-size: 2.1875em;
   color: #fff;
+  margin-left: 0;
 }
-/* line 250, ../sass/app.scss */
+/* line 251, ../sass/app.scss */
 .process .box p {
   font-family: "Verdana";
   font-size: 0.9375em;
   text-align: left;
   color: #fff;
 }
-/* line 257, ../sass/app.scss */
+/* line 258, ../sass/app.scss */
 .process .box img.icon {
   float: right;
 }
-/* line 261, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .process .box a > img {
   position: relative;
   width: 25px;
 }
-/* line 265, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 .process .box a > img:hover {
   top: 1px;
   left: 1px;
 }
-/* line 272, ../sass/app.scss */
+/* line 273, ../sass/app.scss */
 .process .meet {
   background-color: #453a3a;
   -moz-border-radius-topleft: 8px;
@@ -7524,12 +7525,12 @@ body {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 277, ../sass/app.scss */
+/* line 278, ../sass/app.scss */
 .process .meet p.started {
   float: right;
   margin-top: -2em;
 }
-/* line 281, ../sass/app.scss */
+/* line 282, ../sass/app.scss */
 .process .meet p.started a {
   font-weight: bold;
   position: relative;
@@ -7542,32 +7543,32 @@ body {
   color: #453A3A;
   background-color: #fff;
 }
-/* line 289, ../sass/app.scss */
+/* line 290, ../sass/app.scss */
 .process .meet p.started a:hover {
   color: #972E1B;
 }
-/* line 296, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 .process .plan {
   background-color: #5a4c4c;
 }
-/* line 300, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .process .dev {
   background-color: #4b3232;
 }
-/* line 303, ../sass/app.scss */
+/* line 304, ../sass/app.scss */
 .process .dev a {
   color: #301a1a;
   text-decoration: underline;
 }
-/* line 307, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 .process .dev a:hover {
   text-decoration: none;
 }
-/* line 313, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
 }
-/* line 317, ../sass/app.scss */
+/* line 318, ../sass/app.scss */
 .process .launch {
   background-color: #2a9b1b;
   -moz-border-radius-bottomright: 8px;
@@ -7576,29 +7577,29 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 326, ../sass/app.scss */
+  /* line 327, ../sass/app.scss */
   .container {
     min-height: 800px;
   }
 
-  /* line 330, ../sass/app.scss */
+  /* line 331, ../sass/app.scss */
   .process {
     margin-left: 2em;
   }
-  /* line 333, ../sass/app.scss */
+  /* line 334, ../sass/app.scss */
   .process h1, .process h2, .process p {
     cursor: default;
   }
-  /* line 337, ../sass/app.scss */
+  /* line 338, ../sass/app.scss */
   .process .box {
     min-height: 330px;
     border: 1px solid white;
   }
-  /* line 341, ../sass/app.scss */
+  /* line 342, ../sass/app.scss */
   .process .box p {
     font-size: 0.9375em;
   }
-  /* line 346, ../sass/app.scss */
+  /* line 347, ../sass/app.scss */
   .process .meet {
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
@@ -7606,7 +7607,7 @@ body {
     border-top: 0;
     border-left: 0;
   }
-  /* line 352, ../sass/app.scss */
+  /* line 353, ../sass/app.scss */
   .process .plan {
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
@@ -7614,7 +7615,7 @@ body {
     border-top: 0;
     border-right: 0;
   }
-  /* line 358, ../sass/app.scss */
+  /* line 359, ../sass/app.scss */
   .process .dev {
     -moz-border-radius-bottomleft: 8px;
     -webkit-border-bottom-left-radius: 8px;
@@ -7623,28 +7624,28 @@ body {
     border-left: 0;
     border-bottom: 0;
   }
-  /* line 365, ../sass/app.scss */
+  /* line 366, ../sass/app.scss */
   .process .testing {
     border-bottom: 0;
   }
-  /* line 369, ../sass/app.scss */
+  /* line 370, ../sass/app.scss */
   .process .launch {
     border-bottom: 0;
     border-right: 0;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 378, ../sass/app.scss */
+  /* line 379, ../sass/app.scss */
   .container {
     min-height: 600px;
   }
 
-  /* line 383, ../sass/app.scss */
+  /* line 384, ../sass/app.scss */
   .process .box {
     min-height: 235px;
   }
 }
-/* line 390, ../sass/app.scss */
+/* line 391, ../sass/app.scss */
 .js-disabled .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
