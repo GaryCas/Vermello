@@ -27,7 +27,7 @@ $(document).ready( function() {
 		},
 		hide: {
 		      fixed: true,
-		      delay: 1000
+		      delay: 750
 		}
 	});
 	
