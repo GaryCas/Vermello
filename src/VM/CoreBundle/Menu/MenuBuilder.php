@@ -23,8 +23,7 @@ class MenuBuilder
 		
         $menu->setCurrentUri($request->getRequestUri());
         
-        $menu->addChild('our company', array('route' => 'static',
-        									 'routeParameters' => array('page' => 'homepage')));
+        $menu->addChild('our company', array('route' => 'homepage'));
         
         $menu->addChild('portfolio', array('route' => 'static',
         		'routeParameters' => array('page' => '#')));

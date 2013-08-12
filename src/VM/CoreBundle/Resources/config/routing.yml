@@ -3,7 +3,7 @@ quote_request:
   defaults: {_controller: VMCoreBundle:Contact:quoteRequest}
 
 homepage:
-    pattern:  /{page}
+    pattern:  /
     defaults: { _controller: VMCoreBundle:Server:loadPage, page: 'homepage'}
 
 
