@@ -9,7 +9,8 @@ class MenuBuilder
     private $factory;
 
     /**
-     * @param FactoryInterface $factory
+     * @param FactoryInterface $factory,
+     * @param Request $request
      */
     public function __construct(FactoryInterface $factory)
     {
@@ -19,7 +20,9 @@ class MenuBuilder
     public function createMainMenu(Request $request)
     {
         $menu = $this->factory->createItem('main');
-
+		
+        $menu->setCurrentUri($request->getRequestUri());
+        
         $menu->addChild('our company', array('route' => 'static',
         									 'routeParameters' => array('page' => 'homepage')));
         
@@ -29,11 +32,11 @@ class MenuBuilder
         $menu->addChild('products & services', array('route' => 'static',
         		'routeParameters' => array('page' => '#')));
         
-        $menu->addChild('quote request', array('route' => 'static',
-        		'routeParameters' => array('page' => 'quote_request')));
+        $menu->addChild('quote request', array('route' => 'quote_request'));
         
         $menu->addChild('client area', array('route' => 'static',
-        		'routeParameters' => array('page' => '#')));
+        		'routeParameters' => array('page' => '#')))
+        		->setAttribute('class', 'client_area');
 
         return $menu;
     }

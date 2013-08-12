@@ -73,9 +73,11 @@ body {
         margin-top:-1em;
         border-top:0;
        
-        button.quote {
+        a.quote {
+        	position:relative;
+        	top:0.3em;
             @include border-bottom-radius(5px);
-            padding:0.6em 3em 0.6em 3em;
+            padding:1em 3em 0.6em 3em;
             font-family:"Verdana";
             font-size:emCalc(17px);
             background-color:#B8383D;
@@ -109,75 +111,71 @@ body {
         padding-left:0;
        
         li {
-        
-            position:relative;
-            cursor:pointer;
-            @include border-right-radius(8px);
-            background-color: #efefef;
-            min-height:50px;
-            padding:0;
-            margin:0;
-            margin-top:1em;
-            margin-left:-1em;
-            padding-top:5px;
-            padding-right:8px;
-            text-align:right;
-            width:90%;
-            left:0;
-           
-            &:hover {
-                background-color:#cfcfcf;
-            }
-           
-            a {       
+            a { 
+            	display:block;
+            	position:relative;
+	            cursor:pointer;
+	            @include border-right-radius(8px);
+	            background-color: #efefef;
+	            min-height:50px;
+	            padding:0;
+	            margin:0;
+	            margin-top:1em;
+	            margin-left:-1em;
+	            padding-top:5px;
+	            padding-right:8px;
+	            text-align:right;
+	            width:90%;
+	            left:0;   
                 font-family:"Palatino Linotype";
                 font-size:emCalc(17px);
                 color:#756868;
                
                 &:hover {
                     color:#ffffff;
+                    background-color:#cfcfcf;
                 }   
             }
         }
        	
        	li.blank {
-       		background:none;
-       		min-height:25px;
-       		cursor:default;
+       		a {
+       			background:none;
+       			min-height:25px;
+       			cursor:default;
+       		}
        	}
        	
-        li.active {
-            width:100%;   
-            background-color: #B8383D;
-            left:0;
-               
-            a {
-                color:#fff;
-            }           
+        li.current {
+        	a {
+	            width:100%;   
+	            background-color: #B8383D;
+	            left:0;      
+	            color:#fff;     
+        	}     
         }
        
         li.focus {
-            width:100%;   
-            background-color: #B8383D;
-               
-            a {
-                color:#fff;
-            }
+        	a {
+           	 	width:100%;   
+           	 	background-color: #B8383D;
+            	color:#fff;
+       		} 
         }
        
         li.client_area {
-            background-color:#4B3232;
+        	
+        	position:relative;
+        	top:3em;
+        	
+        	a {
+            	background-color:#4B3232;
+           	 	color:#ccc;
             
-            a {
-            	color:#ccc;
-            }
-            
-            &:hover {
-            	a {
+            	&:hover {
             		color:#fff;
             	}
             }
-            
         }
     }
 }
@@ -189,9 +187,14 @@ body {
 .container {
     min-height:600px;
     background-color:#fff;
+    
+     h1 {
+    	margin-left:2em;
+    	color:#B8383D;
+    }
 }
 
-.process {
+	.process {
     max-width:95%;
     margin-right:2em;
     min-height:600px;

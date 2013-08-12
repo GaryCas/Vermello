@@ -29,24 +29,17 @@
 			<div class="row header">
 			
 				<div class="small-4 columns logo">
-					<img src="{{ asset('assets/images/logo.png') }}" alt="Vermello" />
+					<img src="{{ asset('images/logo.png') }}" alt="Vermello" />
 				</div>
 				<div class="small-2 small-offset-5 columns quote">
-					<p><button class="quote">FREE QUOTE</button></p>
+					<p><a href="{{ path('quote_request') }}" class="quote">FREE QUOTE</a></p>
 				</div>
 			</div>
 			
 			<div class="row">
 				
 				<div class="small-3 columns navigation">
-					<ul>
-						<li class="active"><a href="{{ path('homepage') }}">our company</a></li>
-						<li><a href="#">portfolio</a></li>
-						<li><a href="#">products & services</a></li>
-						<li><a href="{{ path('quote_request') }}">quote request</a></li>
-						<li class="blank"></li>
-						<li class="client_area"><a href="#">client area</a></li>
-					</ul>
+					{{ knp_menu_render('main') }}
 				</div>
 				
 				<div class="small-9 columns container">				

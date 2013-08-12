@@ -32,12 +32,15 @@ $(document).ready( function() {
 		      fixed: true,
 		      delay: 500,
 		      effect: function() { $(this).fadeOut(250); }
+		},
+		adjust: {
+			y: 5
 		}
 	});
 	
 	// navigation effects
 	var longuest_duration = 0;
-	$('.navigation li:not(.active, .blank)').each(function(){
+	$('.navigation li:not(.current, .blank) a').each(function(){
 		$(this).css('left', '-250px');
 		var duration = Math.floor((Math.random() * 1500) + 500);
 		$(this).animate({left: 0}, duration, function(){});
@@ -65,7 +68,7 @@ $(document).ready( function() {
 		duration += 400;
 	});
 	
-	setTimeout("$('.navigation li:not(.active, .blank):not(.client_area)').hover(function(){" +
+	setTimeout("$('.navigation li:not(.current, .blank, .client_area) a').hover(function(){" +
 			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
 			"$('a', this).stop().animate({color:'#fff'}, 300);" +
 			"}, function(){ " +
