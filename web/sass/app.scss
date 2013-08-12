@@ -284,8 +284,7 @@ body {
             		background-color:#fff;
             		
             		&:hover {
-            			top:1px;
-            			left:1px;
+            			color:#972E1B;
             		}
     			} 	
             }
@@ -327,6 +326,10 @@ body {
 	
 	.process { 
 		margin-left:2em;
+		
+		h1, h2, p {
+			cursor:default;
+		}
 		
 		.box {
 			min-height:330px;
