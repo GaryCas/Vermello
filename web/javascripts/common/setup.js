@@ -25,9 +25,13 @@ $(document).ready( function() {
 		         color: '#282828'
 		      },
 		},
+		show: {
+			effect: function() { $(this).fadeIn(250); }
+		},
 		hide: {
 		      fixed: true,
-		      delay: 750
+		      delay: 500,
+		      effect: function() { $(this).fadeOut(250); }
 		}
 	});
 	
