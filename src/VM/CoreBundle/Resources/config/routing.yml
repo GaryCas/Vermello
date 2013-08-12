@@ -1,8 +1,13 @@
-vm_core_homepage:
+quote_request:
+  pattern: /quote-request
+  defaults: {_controller: VMCoreBundle:Contact:quoteRequest}
+
+homepage:
     pattern:  /{page}
-    defaults: { _controller: VMCoreBundle:Server:loadPage,  page: 'homepage'}
+    defaults: { _controller: VMCoreBundle:Server:loadPage, page: 'homepage'}
+
 
 # must be last
-vm_core_static:
+static:
     pattern:  /{page}
     defaults: { _controller: VMCoreBundle:Server:loadPage }
