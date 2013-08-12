@@ -7520,28 +7520,48 @@ body {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 269, ../sass/app.scss */
+/* line 268, ../sass/app.scss */
+.process .meet p.started {
+  float: right;
+  margin-top: -2em;
+}
+/* line 271, ../sass/app.scss */
+.process .meet p.started button {
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 3px;
+}
+/* line 276, ../sass/app.scss */
+.process .meet p.started button:hover {
+  top: 1px;
+  left: 1px;
+}
+/* line 284, ../sass/app.scss */
 .process .plan {
   background-color: #5a4c4c;
 }
-/* line 273, ../sass/app.scss */
+/* line 288, ../sass/app.scss */
 .process .dev {
   background-color: #4b3232;
 }
-/* line 276, ../sass/app.scss */
+/* line 291, ../sass/app.scss */
 .process .dev a {
   color: #301a1a;
   text-decoration: underline;
 }
-/* line 280, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 .process .dev a:hover {
   text-decoration: none;
 }
-/* line 286, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
 }
-/* line 290, ../sass/app.scss */
+/* line 305, ../sass/app.scss */
 .process .launch {
   background-color: #2a9b1b;
   -moz-border-radius-bottomright: 8px;
@@ -7550,25 +7570,25 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 299, ../sass/app.scss */
+  /* line 314, ../sass/app.scss */
   .container {
     min-height: 800px;
   }
 
-  /* line 303, ../sass/app.scss */
+  /* line 318, ../sass/app.scss */
   .process {
     margin-left: 2em;
   }
-  /* line 306, ../sass/app.scss */
+  /* line 321, ../sass/app.scss */
   .process .box {
     min-height: 330px;
     border: 1px solid white;
   }
-  /* line 310, ../sass/app.scss */
+  /* line 325, ../sass/app.scss */
   .process .box p {
     font-size: 0.9375em;
   }
-  /* line 315, ../sass/app.scss */
+  /* line 330, ../sass/app.scss */
   .process .meet {
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
@@ -7576,7 +7596,7 @@ body {
     border-top: 0;
     border-left: 0;
   }
-  /* line 321, ../sass/app.scss */
+  /* line 336, ../sass/app.scss */
   .process .plan {
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
@@ -7584,7 +7604,7 @@ body {
     border-top: 0;
     border-right: 0;
   }
-  /* line 327, ../sass/app.scss */
+  /* line 342, ../sass/app.scss */
   .process .dev {
     -moz-border-radius-bottomleft: 8px;
     -webkit-border-bottom-left-radius: 8px;
@@ -7593,28 +7613,28 @@ body {
     border-left: 0;
     border-bottom: 0;
   }
-  /* line 334, ../sass/app.scss */
+  /* line 349, ../sass/app.scss */
   .process .testing {
     border-bottom: 0;
   }
-  /* line 338, ../sass/app.scss */
+  /* line 353, ../sass/app.scss */
   .process .launch {
     border-bottom: 0;
     border-right: 0;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 347, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   .container {
     min-height: 600px;
   }
 
-  /* line 352, ../sass/app.scss */
+  /* line 367, ../sass/app.scss */
   .process .box {
     min-height: 235px;
   }
 }
-/* line 359, ../sass/app.scss */
+/* line 374, ../sass/app.scss */
 .js-disabled .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;

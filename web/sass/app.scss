@@ -264,6 +264,21 @@ body {
             background-color:#453a3a;
             @include border-top-left-radius(8px);
             @include border-top-right-radius(8px);
+            
+            p.started {
+            	float:right;
+            	margin-top:-2em;
+            	button {
+            		position:relative;
+            		@include border-radius(5px);
+            		padding:3px;
+            		
+            		&:hover {
+            			top:1px;
+            			left:1px;
+            		}
+    			} 	
+            }
     }
    
     .plan {
