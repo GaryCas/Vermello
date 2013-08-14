@@ -187,19 +187,23 @@ body {
 .container {
     min-height:600px;
     background-color:#fff;
+    padding-left:3em;
     
      h1 {
-    	margin-left:2em;
+     	padding-left:0;
+    	margin-left:0em;
     	color:#972E1B;
     }
+
+ 
 }
 
 	.process {
-    max-width:95%;
-    margin-right:2em;
-    min-height:600px;
-    margin-left:0;
-    margin-top:-1em;
+	    max-width:95%;
+	    margin-right:2em;
+	    min-height:600px;
+	    margin-left:0;
+	    margin-top:-1em;
    
     .title {
         @include border-top-radius(8px);
@@ -390,4 +394,26 @@ body {
 
 .js-disabled .process .box {@include opacity(1)}
 
-
+form {
+	
+	fieldset {
+		border:0;
+	}
+	
+	div+div {
+		margin-bottom:2em;
+	}
+	
+	input[type=radio] {
+		float:left;
+		margin-right:3px;
+		
+	}
+	
+	input[type=radio]+label {
+		float:left;
+		margin-right:1em;
+	}
+	
+	
+}

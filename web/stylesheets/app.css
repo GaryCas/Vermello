@@ -7425,14 +7425,16 @@ body {
 .container {
   min-height: 600px;
   background-color: #fff;
+  padding-left: 3em;
 }
-/* line 191, ../sass/app.scss */
+/* line 192, ../sass/app.scss */
 .container h1 {
-  margin-left: 2em;
+  padding-left: 0;
+  margin-left: 0em;
   color: #972E1B;
 }
 
-/* line 197, ../sass/app.scss */
+/* line 201, ../sass/app.scss */
 .process {
   max-width: 95%;
   margin-right: 2em;
@@ -7440,7 +7442,7 @@ body {
   margin-left: 0;
   margin-top: -1em;
 }
-/* line 204, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 .process .title {
   -moz-border-radius-topleft: 8px;
   -webkit-border-top-left-radius: 8px;
@@ -7452,7 +7454,7 @@ body {
   border: 1px solid white;
   border-bottom: 0;
 }
-/* line 210, ../sass/app.scss */
+/* line 214, ../sass/app.scss */
 .process .title h1 {
   font-size: 2.1875em;
   text-align: right;
@@ -7461,7 +7463,7 @@ body {
   margin-right: 0;
   margin-bottom: 0;
 }
-/* line 219, ../sass/app.scss */
+/* line 223, ../sass/app.scss */
 .process .title h2 {
   font-size: 1.5625em;
   text-align: right;
@@ -7469,18 +7471,18 @@ body {
   color: #bc6f61;
   margin-top: 5px;
 }
-/* line 226, ../sass/app.scss */
+/* line 230, ../sass/app.scss */
 .process .title h2 span.web {
   font-size: 1.25em;
   text-decoration: overline;
   color: #972f1c;
 }
-/* line 232, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 .process .title h2 span.p-mark {
   font-size: 1.25em;
   color: #972f1c;
 }
-/* line 239, ../sass/app.scss */
+/* line 243, ../sass/app.scss */
 .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -7488,34 +7490,34 @@ body {
   padding-left: 1em;
   border-bottom: 1px solid white;
 }
-/* line 245, ../sass/app.scss */
+/* line 249, ../sass/app.scss */
 .process .box h1 {
   font-size: 2.1875em;
   color: #fff;
   margin-left: 0;
 }
-/* line 251, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .process .box p {
   font-family: "Verdana";
   font-size: 0.9375em;
   text-align: left;
   color: #fff;
 }
-/* line 258, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .process .box img.icon {
   float: right;
 }
-/* line 262, ../sass/app.scss */
+/* line 266, ../sass/app.scss */
 .process .box a > img {
   position: relative;
   width: 25px;
 }
-/* line 266, ../sass/app.scss */
+/* line 270, ../sass/app.scss */
 .process .box a > img:hover {
   top: 1px;
   left: 1px;
 }
-/* line 273, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 .process .meet {
   background-color: #453a3a;
   -moz-border-radius-topleft: 8px;
@@ -7525,12 +7527,12 @@ body {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 278, ../sass/app.scss */
+/* line 282, ../sass/app.scss */
 .process .meet p.started {
   float: right;
   margin-top: -2em;
 }
-/* line 282, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 .process .meet p.started a {
   font-weight: bold;
   position: relative;
@@ -7543,32 +7545,32 @@ body {
   color: #453A3A;
   background-color: #fff;
 }
-/* line 290, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 .process .meet p.started a:hover {
   color: #972E1B;
 }
-/* line 297, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 .process .plan {
   background-color: #5a4c4c;
 }
-/* line 301, ../sass/app.scss */
+/* line 305, ../sass/app.scss */
 .process .dev {
   background-color: #4b3232;
 }
-/* line 304, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
 .process .dev a {
   color: #301a1a;
   text-decoration: underline;
 }
-/* line 308, ../sass/app.scss */
+/* line 312, ../sass/app.scss */
 .process .dev a:hover {
   text-decoration: none;
 }
-/* line 314, ../sass/app.scss */
+/* line 318, ../sass/app.scss */
 .process .testing {
   background-color: #351f1f;
 }
-/* line 318, ../sass/app.scss */
+/* line 322, ../sass/app.scss */
 .process .launch {
   background-color: #2a9b1b;
   -moz-border-radius-bottomright: 8px;
@@ -7577,29 +7579,29 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 327, ../sass/app.scss */
+  /* line 331, ../sass/app.scss */
   .container {
     min-height: 800px;
   }
 
-  /* line 331, ../sass/app.scss */
+  /* line 335, ../sass/app.scss */
   .process {
     margin-left: 2em;
   }
-  /* line 334, ../sass/app.scss */
+  /* line 338, ../sass/app.scss */
   .process h1, .process h2, .process p {
     cursor: default;
   }
-  /* line 338, ../sass/app.scss */
+  /* line 342, ../sass/app.scss */
   .process .box {
     min-height: 330px;
     border: 1px solid white;
   }
-  /* line 342, ../sass/app.scss */
+  /* line 346, ../sass/app.scss */
   .process .box p {
     font-size: 0.9375em;
   }
-  /* line 347, ../sass/app.scss */
+  /* line 351, ../sass/app.scss */
   .process .meet {
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px;
@@ -7607,7 +7609,7 @@ body {
     border-top: 0;
     border-left: 0;
   }
-  /* line 353, ../sass/app.scss */
+  /* line 357, ../sass/app.scss */
   .process .plan {
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
@@ -7615,7 +7617,7 @@ body {
     border-top: 0;
     border-right: 0;
   }
-  /* line 359, ../sass/app.scss */
+  /* line 363, ../sass/app.scss */
   .process .dev {
     -moz-border-radius-bottomleft: 8px;
     -webkit-border-bottom-left-radius: 8px;
@@ -7624,29 +7626,48 @@ body {
     border-left: 0;
     border-bottom: 0;
   }
-  /* line 366, ../sass/app.scss */
+  /* line 370, ../sass/app.scss */
   .process .testing {
     border-bottom: 0;
   }
-  /* line 370, ../sass/app.scss */
+  /* line 374, ../sass/app.scss */
   .process .launch {
     border-bottom: 0;
     border-right: 0;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 379, ../sass/app.scss */
+  /* line 383, ../sass/app.scss */
   .container {
     min-height: 600px;
   }
 
-  /* line 384, ../sass/app.scss */
+  /* line 388, ../sass/app.scss */
   .process .box {
     min-height: 235px;
   }
 }
-/* line 391, ../sass/app.scss */
+/* line 395, ../sass/app.scss */
 .js-disabled .process .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+/* line 399, ../sass/app.scss */
+form fieldset {
+  border: 0;
+}
+/* line 403, ../sass/app.scss */
+form div + div {
+  margin-bottom: 1em;
+}
+/* line 407, ../sass/app.scss */
+form input[type=radio] {
+  float: left;
+  margin-right: 3px;
+}
+/* line 413, ../sass/app.scss */
+form input[type=radio] + label {
+  float: left;
+  margin-right: 1em;
 }

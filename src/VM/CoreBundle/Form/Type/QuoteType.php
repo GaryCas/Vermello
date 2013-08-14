@@ -30,16 +30,19 @@ class QuoteType extends AbstractType
        $builder->add('logo', 'choice', array(
        		'label' => 'Do you need a logo?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
+       		'expanded' => true
        ));
        
        $builder->add('cms', 'choice', array(
        		'label' => 'Do you need a CMS (Content Management System)?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
+       		'expanded' => true
        ));
        
        $builder->add('ecommerce', 'choice', array(
        		'label' => 'Are you going to sell online?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
+       		'expanded' => true
        ));
        
        $builder->add('due_date', 'choice', array(
@@ -67,12 +70,14 @@ class QuoteType extends AbstractType
        $builder->add('domain', 'choice', array(
        		'label' => 'Do you need a domain?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
-       ));
+       		'expanded' => true
+       	));
        
        $builder->add('hosting', 'choice', array(
        		'label' => 'Do you need hosting?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
-       ));
+       		'expanded' => true
+       	));
        
        $builder->add('additional_info', 'textarea', array(
        		'label' => 'Feel free to add anything that is on your mind.'
@@ -97,6 +102,7 @@ class QuoteType extends AbstractType
        $builder->add('method_contact', 'choice', array(
        		'label' => 'Preferred method of contact?',
        		'choices'   => array('email' => 'Email', 'phone' => 'Phone'),
+       		'expanded' => true
        ));
        
     }
