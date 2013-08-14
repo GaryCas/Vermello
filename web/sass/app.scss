@@ -417,3 +417,17 @@ form {
 	}
 	
 }
+
+form.custom {
+	
+	span.custom.radio {
+		float:left;
+		margin-right:3px;
+	}
+	
+	span.custom.radio+label {
+		float:left;
+		margin-right:1em;
+	}
+	
+}

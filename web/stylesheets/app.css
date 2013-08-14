@@ -7672,3 +7672,14 @@ form input[type=radio] + label {
   float: left;
   margin-right: 1em;
 }
+
+/* line 423, ../sass/app.scss */
+form.custom span.custom.radio {
+  float: left;
+  margin-right: 3px;
+}
+/* line 428, ../sass/app.scss */
+form.custom span.custom.radio + label {
+  float: left;
+  margin-right: 1em;
+}
