@@ -13,7 +13,7 @@ class QuoteType extends AbstractType
         ));
        
        $builder->add('description', 'textarea', array(
-       		'label' => 'Description?',
+       		'label' => 'Description',
        ));
        
        $builder->add('pages', 'choice', array(
