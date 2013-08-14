@@ -9,7 +9,7 @@ class QuoteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
        $builder->add('project_name', 'text', array(
-        	'label' => 'Project Name',
+        	'label' => 'Project name',
         ));
        
        $builder->add('description', 'textarea', array(
