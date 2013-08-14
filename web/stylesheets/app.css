@@ -7660,7 +7660,7 @@ form fieldset {
 }
 /* line 404, ../sass/app.scss */
 form div + div {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 /* line 408, ../sass/app.scss */
 form input[type=radio] {
