@@ -4,47 +4,43 @@
 	
 	<h1>Quote Request</h1>
 	
-	<form>
+	{{ form_start(form) }}
 	
 	<fieldset>
 	
 		<legend>Website Information</legend>
 		
-		<p><label>Name</label></p>
+		{{ form_row(form.project_name) }}
 		
-		<p><label>What is it about?</label></p>
+		{{ form_row(form.description) }}
 		
-		<p><label>What type of website?</label></p>
+		{{ form_row(form.pages) }}
 		
-		<p><label>How many pages?</label></p>
+		{{ form_row(form.logo) }}
 		
-		<p><label>Do you need a logo?</label></p>
+		{{ form_row(form.cms) }}
 		
-		<p><label>Do you need a CMS (Content Management System)?</label></p>
+		{{ form_row(form.ecommerce) }}
 		
-		<p><label>Are you going to sell online?</label></p>
+		{{ form_row(form.due_date) }}
 		
-		<p><label>When do you need this done?</label></p>
-		
-		<p><label>Your budget?</label></p>
+		{{ form_row(form.budget) }}
 		
 	</fieldset>
 	
 	<fieldset>
 		<legend>Hosting & Domain</legend>
 		
-		<p><label>Do you need a domain?</label></p>
+		{{ form_row(form.domain) }}
 		
-		<p><label>Do you need hosting?</label></p>
+		{{ form_row(form.hosting) }}
 		
 	</fieldset>
 	
 	<fieldset>
 		<legend>Additional Information</legend>
 		
-		<p><label>Feel free to add anything that is on your mind.</label></p>
-		
-		<p><textarea></textarea></p>
+		{{ form_row(form.additional_info) }}
 		
 	</fieldset>
 	
@@ -52,18 +48,18 @@
 	
 		<legend>Contact Information</legend>
 		
-		<p><label>First Name</label></p>
+		{{ form_row(form.first_name) }}
 		
-		<p><label>Last Name</label></p>
+		{{ form_row(form.last_name) }}
 		
-		<p><label>Email</label></p>
+		{{ form_row(form.email) }}
 		
-		<p><label>Phone</label></p>
+		{{ form_row(form.phone) }}
 		
-		<p><label>Preferred method of contact</label></p>
+		{{ form_row(form.method_contact) }}
 	
 	</fieldset>
 	
-	</form>
+	{{ form_end(form) }}
 	
 {% endblock %}
