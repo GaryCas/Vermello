@@ -54,7 +54,7 @@ class QuoteType extends AbstractType
        ));
        
        $builder->add('budget', 'choice', array(
-       		'label' => 'Your budjet?',
+       		'label' => 'Your budget?',
        		'choices'   => array(
        				'a' => 'less than 500',
        				'b' => 'less than 1000',
