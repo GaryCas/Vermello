@@ -23,7 +23,7 @@ class QuoteType extends AbstractType
         		'b' => '~ 5 pages',
         		'c' => '~ 15 pages',
         		'd' => '~ 25 pages',
-    			'e' => 'Over 20 pages',
+    			'e' => '> 20 pages',
    			 )
        ));
        
