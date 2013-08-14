@@ -19,11 +19,11 @@ class QuoteType extends AbstractType
        $builder->add('pages', 'choice', array(
        		'label' => 'How many pages?',
     		'choices'   => array(
-        		'a' => '~ 5 pages',
-        		'b' => '~ 15 pages',
-        		'c' => '~ 25 pages',
-    			'd' => 'Over 20 pages',
-    			'e' => 'I don\'t know yet'
+    			'a' => 'I don\'t know yet',
+        		'b' => '~ 5 pages',
+        		'c' => '~ 15 pages',
+        		'd' => '~ 25 pages',
+    			'e' => 'Over 20 pages',
    			 )
        ));
        
@@ -48,27 +48,29 @@ class QuoteType extends AbstractType
        $builder->add('due_date', 'choice', array(
        		'label' => 'When do you need this done?',
        		'choices'   => array(
-        		'a' => 'As soon as possible, we\'re late!',
-        		'b' => 'Within 2 weeks',
-        		'c' => 'Within a month',
-    			'd' => 'Over a month',
-       			'e' => 'I don\'t know yet'
+       			'a' => 'I don\'t know yet',
+        		'b' => 'As soon as possible, we\'re late!',
+        		'c' => 'Within 2 weeks',
+        		'd' => 'Within a month',
+    			'e' => 'Over a month',
+       			
    			 )
        ));
        
        $builder->add('budget', 'choice', array(
        		'label' => 'Your budget?',
        		'choices'   => array(
-       				'a' => 'less than 500',
-       				'b' => 'less than 1000',
-       				'c' => 'less than 1500',
-       				'd' => 'Over 2000',
-       				'e' => 'I don\'t know yet'
+       				'a' => 'I don\'t know yet',
+       				'b' => 'less than 500',
+       				'c' => 'less than 1000',
+       				'd' => 'less than 1500',
+       				'e' => 'Over 2000',
+       				
        		)
        ));
        
        $builder->add('domain', 'choice', array(
-       		'label' => 'Do you need a domain?',
+       		'label' => 'Do you need a domain name?',
        		'choices'   => array('y' => 'Yes', 'n' => 'No'),
        		'expanded' => true
        	));
@@ -80,7 +82,7 @@ class QuoteType extends AbstractType
        	));
        
        $builder->add('additional_info', 'textarea', array(
-       		'label' => 'Feel free to add anything that is on your mind.'
+       		'label' => 'Feel free to add anything that\'s on your mind.'
        ));
        
        $builder->add('first_name', 'text', array(
