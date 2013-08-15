@@ -7698,3 +7698,10 @@ div.login input[type=text], div.login input[type=password] {
 div.login p.submit {
   text-align: center;
 }
+/* line 22, ../sass/login.scss */
+div.login div.errors {
+  background-color: #efefef;
+  color: #B4363B;
+  padding: 1em;
+  margin-bottom: 2em;
+}

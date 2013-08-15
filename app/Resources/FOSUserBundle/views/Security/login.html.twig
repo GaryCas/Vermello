@@ -11,7 +11,7 @@
 			<div class="row">
 			
 			{% if error %}
-			    <div>{{ error|trans }}</div>
+			    <div class="errors">{{ error|trans }}</div>
 			{% endif %}
 			
 			<form action="{{ path("fos_user_security_check") }}" method="post">

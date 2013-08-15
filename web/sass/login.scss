@@ -18,4 +18,11 @@ div.login {
 	p.submit {
 		text-align:center;
 	}
+	
+	div.errors {
+		background-color:#efefef;
+		color:#B4363B;
+		padding:1em;
+		margin-bottom:2em;
+	}
 }
