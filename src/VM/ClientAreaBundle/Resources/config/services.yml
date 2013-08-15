@@ -1,0 +1,7 @@
+parameters:
+#    vm_client_area.example.class: VM\ClientAreaBundle\Example
+
+services:
+#    vm_client_area.example:
+#        class: %vm_client_area.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

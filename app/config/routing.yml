@@ -1,3 +1,7 @@
+vm_client_area:
+    resource: "@VMClientAreaBundle/Resources/config/routing.yml"
+    prefix:   /
+
 vm_core:
     resource: "@VMCoreBundle/Resources/config/routing.yml"
     prefix:   /
