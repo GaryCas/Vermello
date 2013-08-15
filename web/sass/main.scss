@@ -154,7 +154,7 @@ body {
 .js-disabled .navigation ul li {left:0}
 
 .container {
-    min-height:600px;
+    min-height:400px;
     background-color:#fff;
     padding-left:3em;
     
@@ -298,7 +298,7 @@ body {
 @media #{$small} {
 	
 	.container {
-		min-height:800px;
+		min-height:400px;
 	}
 	
 	.process { 
@@ -350,7 +350,7 @@ body {
 @media #{$medium} {
 	
 	.container {
-		min-height:600px;
+		min-height:400px;
 	}
 	
 	.process {
@@ -401,6 +401,8 @@ form.custom {
 }
 
 .footer {
+	
+	margin-top:2em;
 	
 	p {
 		text-align:center;

@@ -7399,7 +7399,7 @@ body {
 
 /* line 156, ../sass/main.scss */
 .container {
-  min-height: 600px;
+  min-height: 400px;
   background-color: #fff;
   padding-left: 3em;
 }
@@ -7557,7 +7557,7 @@ body {
 @media only screen and (min-width: 768px) {
   /* line 300, ../sass/main.scss */
   .container {
-    min-height: 800px;
+    min-height: 400px;
   }
 
   /* line 304, ../sass/main.scss */
@@ -7615,7 +7615,7 @@ body {
 @media only screen and (min-width: 1280px) {
   /* line 352, ../sass/main.scss */
   .container {
-    min-height: 600px;
+    min-height: 400px;
   }
 
   /* line 357, ../sass/main.scss */
@@ -7659,16 +7659,20 @@ form.custom span.custom.radio + label {
   margin-right: 1em;
 }
 
-/* line 405, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
+.footer {
+  margin-top: 2em;
+}
+/* line 407, ../sass/main.scss */
 .footer p {
   text-align: center;
 }
-/* line 409, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .footer a {
   color: #B4363B;
 }
-/* line 412, ../sass/main.scss */
-.footer a {
+/* line 414, ../sass/main.scss */
+.footer a:hover {
   text-decoration: none;
 }
 
