@@ -7680,16 +7680,21 @@ div.login {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
+  -webkit-box-shadow: 0 0 4px #78191d;
+  -moz-box-shadow: 0 0 4px #78191d;
+  box-shadow: 0 0 4px #78191d;
 }
-/* line 7, ../sass/login.scss */
+/* line 8, ../sass/login.scss */
 div.login label {
   color: #fff;
+  font-size: 1.1875em;
+  padding-left: 2em;
 }
-/* line 11, ../sass/login.scss */
+/* line 14, ../sass/login.scss */
 div.login input[type=text], div.login input[type=password] {
   max-width: 250px;
 }
-/* line 15, ../sass/login.scss */
+/* line 18, ../sass/login.scss */
 div.login p.submit {
   text-align: center;
 }

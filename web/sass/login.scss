@@ -3,9 +3,12 @@ div.login {
 	padding-top:2em;
 	background-color:#B4363B;
 	@include border-radius(8px);
+	@include single-box-shadow(#78191d, 0, 0, 4px);
 	
 	label {
 		color:#fff;
+		font-size:emCalc(19px);
+		padding-left:2em;
 	}
 	
 	input[type=text], input[type=password] {
