@@ -7647,24 +7647,13 @@ form input[type=radio] + label {
   float: left;
   margin-right: 1em;
 }
-/* line 387, ../sass/main.scss */
-form input[type="submit"] {
-  padding: 5px 2em 5px 2em;
-  background-color: #fff;
-  border: 0;
-  color: #626262;
-}
-/* line 393, ../sass/main.scss */
-form input[type="submit"]:hover {
-  color: #B4363B;
-}
 
-/* line 402, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 form.custom span.custom.radio {
   float: left;
   margin-right: 3px;
 }
-/* line 407, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 form.custom span.custom.radio + label {
   float: left;
   margin-right: 1em;
@@ -7684,21 +7673,45 @@ div.login {
   -moz-box-shadow: 0 0 4px #78191d;
   box-shadow: 0 0 4px #78191d;
 }
-/* line 8, ../sass/login.scss */
+/* line 9, ../sass/login.scss */
 div.login label {
   color: #fff;
   font-size: 0.8125em;
   padding-left: 2em;
 }
-/* line 14, ../sass/login.scss */
+/* line 15, ../sass/login.scss */
 div.login input[type=text], div.login input[type=password] {
   max-width: 250px;
+  background-color: #68181b;
+  border: 0;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
-/* line 18, ../sass/login.scss */
+/* line 23, ../sass/login.scss */
 div.login p.submit {
   text-align: center;
 }
-/* line 22, ../sass/login.scss */
+/* line 27, ../sass/login.scss */
+div.login input[type="submit"] {
+  padding: 5px 2em 5px 2em;
+  background-color: #fff;
+  border: 0;
+  color: #626262;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 34, ../sass/login.scss */
+div.login input[type="submit"]:hover {
+  color: #B4363B;
+}
+/* line 39, ../sass/login.scss */
 div.login div.errors {
   background-color: #efefef;
   color: #B4363B;
@@ -7707,14 +7720,14 @@ div.login div.errors {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 32, ../sass/login.scss */
+  /* line 49, ../sass/login.scss */
   div.login label {
     font-size: 0.9375em;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 40, ../sass/login.scss */
+  /* line 57, ../sass/login.scss */
   div.login label {
-    font-size: 1.1875em;
+    font-size: 1.125em;
   }
 }

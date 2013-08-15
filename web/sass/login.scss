@@ -2,6 +2,7 @@ div.login {
 	margin-top:1em;
 	padding-top:2em;
 	background-color:#B4363B;
+	//background: url('../images/bg/stain.png') #B4363B no-repeat top right;
 	@include border-radius(8px);
 	@include single-box-shadow(#78191d, 0, 0, 4px);
 	
@@ -13,10 +14,26 @@ div.login {
 	
 	input[type=text], input[type=password] {
 		max-width:250px;
+		background-color:#68181b;
+		border:0;
+		color:#fff;
+		@include border-radius(4px);
 	}
 	
 	p.submit {
 		text-align:center;
+	}
+	
+	input[type="submit"] {
+		padding:5px 2em 5px 2em;
+		background-color:#fff;
+		border:0;
+		color:#626262;
+		@include border-radius(4px);
+		
+		&:hover {
+			color:#B4363B;
+		}
 	}
 	
 	div.errors {
