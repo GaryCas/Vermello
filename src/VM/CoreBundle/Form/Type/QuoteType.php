@@ -61,10 +61,10 @@ class QuoteType extends AbstractType
        		'label' => 'Your budget?',
        		'choices'   => array(
        				'a' => 'I don\'t know yet',
-       				'b' => 'less than 500',
-       				'c' => 'less than 1000',
-       				'd' => 'less than 1500',
-       				'e' => 'Over 2000',
+       				'b' => 'less than £500',
+       				'c' => 'less than £1000',
+       				'd' => 'less than £1500',
+       				'e' => 'Over £2000',
        				
        		)
        ));

@@ -384,7 +384,6 @@ form {
 		margin-right:1em;
 	}
 	
-	
 }
 
 form.custom {
@@ -399,4 +398,19 @@ form.custom {
 		margin-right:1em;
 	}
 	
+}
+
+.footer {
+	
+	p {
+		text-align:center;
+	}
+	
+	a {
+		color:#B4363B;
+		
+		&:hover {
+			text-decoration:none;
+		}
+	}
 }

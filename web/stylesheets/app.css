@@ -7648,15 +7648,28 @@ form input[type=radio] + label {
   margin-right: 1em;
 }
 
-/* line 392, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 form.custom span.custom.radio {
   float: left;
   margin-right: 3px;
 }
-/* line 397, ../sass/main.scss */
+/* line 396, ../sass/main.scss */
 form.custom span.custom.radio + label {
   float: left;
   margin-right: 1em;
+}
+
+/* line 405, ../sass/main.scss */
+.footer p {
+  text-align: center;
+}
+/* line 409, ../sass/main.scss */
+.footer a {
+  color: #B4363B;
+}
+/* line 412, ../sass/main.scss */
+.footer a {
+  text-decoration: none;
 }
 
 /* line 1, ../sass/login.scss */
@@ -7685,11 +7698,11 @@ div.login input[type=text], div.login input[type=password] {
   background-color: #68181b;
   border: 0;
   color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 /* line 23, ../sass/login.scss */
 div.login p.submit {
@@ -7701,11 +7714,11 @@ div.login input[type="submit"] {
   background-color: #fff;
   border: 0;
   color: #626262;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 /* line 34, ../sass/login.scss */
 div.login input[type="submit"]:hover {
