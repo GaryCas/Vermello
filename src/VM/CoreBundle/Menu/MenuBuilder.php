@@ -33,8 +33,7 @@ class MenuBuilder
         
         $menu->addChild('quote request', array('route' => 'quote_request'));
         
-        $menu->addChild('client area', array('route' => 'static',
-        		'routeParameters' => array('page' => '#')))
+        $menu->addChild('client area', array('route' => 'fos_user_security_login'))
         		->setAttribute('class', 'client_area');
 
         return $menu;

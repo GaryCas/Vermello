@@ -1,0 +1,18 @@
+div.login {
+	margin-top:1em;
+	padding-top:2em;
+	background-color:#B4363B;
+	@include border-radius(8px);
+	
+	label {
+		color:#fff;
+	}
+	
+	input[type=text], input[type=password] {
+		max-width:250px;
+	}
+	
+	p.submit {
+		text-align:center;
+	}
+}
