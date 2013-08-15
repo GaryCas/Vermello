@@ -7687,7 +7687,7 @@ div.login {
 /* line 8, ../sass/login.scss */
 div.login label {
   color: #fff;
-  font-size: 1.1875em;
+  font-size: 0.8125em;
   padding-left: 2em;
 }
 /* line 14, ../sass/login.scss */
@@ -7704,4 +7704,17 @@ div.login div.errors {
   color: #B4363B;
   padding: 1em;
   margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 32, ../sass/login.scss */
+  div.login label {
+    font-size: 0.9375em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 40, ../sass/login.scss */
+  div.login label {
+    font-size: 1.1875em;
+  }
 }

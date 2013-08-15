@@ -7,7 +7,7 @@ div.login {
 	
 	label {
 		color:#fff;
-		font-size:emCalc(19px);
+		font-size:emCalc(13px);
 		padding-left:2em;
 	}
 	
@@ -24,5 +24,21 @@ div.login {
 		color:#B4363B;
 		padding:1em;
 		margin-bottom:2em;
+	}
+}
+
+@media #{$small} {
+	div.login {
+		label {
+			font-size:emCalc(15px);
+		}
+	}
+}
+
+@media #{$medium} {
+	div.login {
+		label {
+			font-size:emCalc(18px);
+		}
 	}
 }
