@@ -4,6 +4,6 @@ client_area_switch_role:
     defaults: { _controller: VMClientAreaBundle:Account:switchRole }
     
   
-client_area_profile_view:
-    pattern:  /profile
-    defaults: { _controller: VMClientAreaBundle:Account:viewProfile }
+client_area_dashboard:
+    pattern:  /dashboard
+    defaults: { _controller: VMClientAreaBundle:Account:viewDashboard }

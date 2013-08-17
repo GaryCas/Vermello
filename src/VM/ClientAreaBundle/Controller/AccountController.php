@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class AccountController extends Controller
 {
-    public function viewProfileAction()
+    public function viewDashboardAction()
     {
 
-        return $this->render('VMClientAreaBundle:Account:view-profile.html.twig');
+        return $this->render('VMClientAreaBundle:Account:dashboard.html.twig');
     }
     
     public function switchRoleAction()
