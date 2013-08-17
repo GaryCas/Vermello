@@ -3,7 +3,7 @@ fos_user_security:
 
 vm_client_area:
     resource: "@VMClientAreaBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /client-area
 
 vm_core:
     resource: "@VMCoreBundle/Resources/config/routing.yml"

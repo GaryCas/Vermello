@@ -1,0 +1,32 @@
+div.switch_role_temp {
+	position:fixed;
+	z-index:10000;
+	top:3em;
+	right:0;
+	background-color:#B7373C;
+	color:#efefef;
+	border-right:0;
+	padding:1em;
+	min-width:300px;
+	@include opacity(0.8);
+	@include border-left-radius(8px);
+	
+	p.curr {
+		font-size:emCalc(13px);
+		color:#dfdfdf;
+		
+		span {
+			color:#fff;
+			font-size:emCalc(20px);
+		}
+	}
+	
+	p.switch {
+		text-align:center;
+	}
+	
+	input.button {
+		margin:0 auto 0 auto;
+		color:#525252;
+	}
+}

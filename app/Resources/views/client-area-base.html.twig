@@ -1,0 +1,7 @@
+{% if is_granted('ROLE_DEV') %}
+    {% set base = '::dev-base.html.twig' %}
+{% elseif is_granted('ROLE_CLIENT') %}
+	{% set base = '::cl-base.html.twig' %}
+{% endif %}
+
+{% extends base %}

@@ -68,7 +68,7 @@ $(document).ready( function() {
 		duration += 400;
 	});
 	
-	setTimeout("$('.navigation li:not(.current, .blank, .client_area) a').hover(function(){" +
+	setTimeout("$('.navigation li:not(.current, .blank, .client_area, .logout) a').hover(function(){" +
 			"$(this).stop().animate({width:'100%', backgroundColor: '#B8383D'}, 500);" +
 			"$('a', this).stop().animate({color:'#fff'}, 300);" +
 			"}, function(){ " +

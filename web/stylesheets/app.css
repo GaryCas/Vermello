@@ -7372,17 +7372,17 @@ body {
   color: #fff;
 }
 /* line 135, ../sass/main.scss */
-.navigation ul li.client_area {
+.navigation ul li.client_area, .navigation ul li.logout {
   position: relative;
   top: 3em;
 }
 /* line 140, ../sass/main.scss */
-.navigation ul li.client_area a {
+.navigation ul li.client_area a, .navigation ul li.logout a {
   background-color: #4B3232;
   color: #ccc;
 }
 /* line 144, ../sass/main.scss */
-.navigation ul li.client_area a:hover {
+.navigation ul li.client_area a:hover, .navigation ul li.logout a:hover {
   color: #fff;
 }
 
@@ -7678,7 +7678,7 @@ form.custom span.custom.radio + label {
 
 /* line 1, ../sass/login.scss */
 div.login {
-  margin-top: 1em;
+  margin-top: 2em;
   padding-top: 2em;
   background-color: #B4363B;
   -webkit-border-radius: 8px;
@@ -7747,4 +7747,43 @@ div.login div.errors {
   div.login label {
     font-size: 1.125em;
   }
+}
+/* line 1, ../sass/client-area.scss */
+div.switch_role_temp {
+  position: fixed;
+  z-index: 10000;
+  top: 3em;
+  right: 0;
+  background-color: #B7373C;
+  color: #efefef;
+  border-right: 0;
+  padding: 1em;
+  min-width: 300px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/* line 14, ../sass/client-area.scss */
+div.switch_role_temp p.curr {
+  font-size: 0.8125em;
+  color: #dfdfdf;
+}
+/* line 18, ../sass/client-area.scss */
+div.switch_role_temp p.curr span {
+  color: #fff;
+  font-size: 1.25em;
+}
+/* line 24, ../sass/client-area.scss */
+div.switch_role_temp p.switch {
+  text-align: center;
+}
+/* line 28, ../sass/client-area.scss */
+div.switch_role_temp input.button {
+  margin: 0 auto 0 auto;
+  color: #525252;
 }
