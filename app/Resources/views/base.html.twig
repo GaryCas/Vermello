@@ -31,15 +31,18 @@
 			{% block temp %}	
 			{% endblock %}
 			
+			{% block header %}
 			<div class="row header">
-			
 				<div class="small-4 columns logo">
 					<img src="{{ asset('images/logo.png') }}" alt="Vermello" />
 				</div>
+				{% block header_quote %}
 				<div class="small-3 small-offset-4 columns quote">
 					<p><a href="{{ path('quote_request') }}" class="quote">FREE QUOTE</a></p>
 				</div>
+				{% endblock %}
 			</div>
+			{% endblock %}
 			
 			<div class="row">
 				
