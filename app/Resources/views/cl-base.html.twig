@@ -1,38 +1,5 @@
 {% extends '::base.html.twig' %}
 
-{% block temp %}	
-	<div class="switch_role_temp">
-	<form method="post" action="{{ path('client_area_switch_role') }}" class="custom">
-		<p class="curr">Current Role: <span> 
-			
-			{% if is_granted('ROLE_ADMIN') %}
-				Admin (ROLE_ADMIN)</span></p>
-				<p>
-				<select name="role">
-					<option value="ROLE_DEV">Developer</option>
-					<option value="ROLE_CLIENT">Client</option>
-				</select></p>
-			{% elseif is_granted('ROLE_DEV') %}
-				Developer (ROLE_DEV)</span></p>
-				<p>
-				<select name="role">
-					<option value="ROLE_CLIENT">Client</option>
-					<option value="ROLE_ADMIN">Admin</option>
-				</select></p>
-			{% elseif is_granted('ROLE_CLIENT') %}
-				Client (ROLE_CLIENT)</span></p>
-				<p>
-				<select name="role">
-					<option value="ROLE_DEV">Developer</option>
-					<option value="ROLE_ADMIN">Admin</option>
-				</select></p>
-			{% endif %}
-		<p class="switch"><input class="button" type="submit" href="#" value="Switch"/></p>
-		</form>
-	</div>
-{% endblock %}
-
-
 {% block navigation %}
 	<ul>
 		<li><a href="#">dashboard</a></li>
