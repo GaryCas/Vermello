@@ -14,7 +14,7 @@ class AccountController extends Controller
     
     public function switchRoleAction()
     {
-    	$em = $this->getDoctrine()->getEntityManager();
+    	$em = $this->getDoctrine()->getManager();
     	$user = $this->get('security.context')->getToken()->getUser();
     	$request = $this->getRequest();
     	
