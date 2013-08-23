@@ -29,7 +29,7 @@ class MenuBuilder
         		'routeParameters' => array('page' => '#')));
         
         $menu->addChild('products & services', array('route' => 'static', //Toby fix itttt!!
-        		'routeParameters' => array('page' => '#')));
+        		'routeParameters' => array('page' => '#'))); // Toby fix ittt. Je ne sais pas! 
         
         $menu->addChild('quote request', array('route' => 'quote_request'));
         
