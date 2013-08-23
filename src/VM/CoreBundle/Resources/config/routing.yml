@@ -2,10 +2,13 @@ quote_request:
   pattern: /quote-request
   defaults: {_controller: VMCoreBundle:Contact:quoteRequest}
 
+product_services:
+    pattern:   /products_services
+    defaults: { _controller: VMCoreBundle:Server:loadPage, page: 'products_services'} 
+
 homepage:
     pattern:  /
     defaults: { _controller: VMCoreBundle:Server:loadPage, page: 'homepage'}
-
 
 # must be last
 static:

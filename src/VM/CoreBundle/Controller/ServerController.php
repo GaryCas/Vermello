@@ -16,4 +16,5 @@ class ServerController extends Controller
 
         return $this->render($template);
     }
+	
 }
