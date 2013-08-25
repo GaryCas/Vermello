@@ -7410,6 +7410,13 @@ body {
   color: #972E1B;
 }
 
+.container h3 {
+  padding-left: 0;
+  margin-left: 0em;
+  color: #972E1B;
+}
+
+
 /* line 170, ../sass/main.scss */
 .process {
   max-width: 95%;
@@ -7447,6 +7454,9 @@ body {
   color: #bc6f61;
   margin-top: 5px;
 }
+
+
+
 /* line 199, ../sass/main.scss */
 .process .title h2 span.web {
   font-size: 1.25em;

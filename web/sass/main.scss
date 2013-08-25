@@ -196,6 +196,15 @@ body {
         	color:#bc6f61;
         	margin-top:5px;
         	
+        h3 {
+            font-size:emCalc(20px);
+            text-align:left;
+            color:#972f1c;
+            padding-right:0;
+            margin-right:0;
+            margin-bottom:0;
+        }
+        
         	span.web {
         		font-size:emCalc(20px);
         		text-decoration:overline;
@@ -207,8 +216,20 @@ body {
         		color:#972f1c;
         	}
         }
+          
+ 
+    
     }
    
+    .text {
+       font-size:emCalc(8px);
+       text-align:left;
+       color:#972f1c;
+       padding-right:0;
+       margin-right:0;
+       margin-bottom:0;
+       }
+            
     .box {
         @include opacity(1);
         min-height:235px;
